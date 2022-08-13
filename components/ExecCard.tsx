@@ -32,7 +32,12 @@ const ExecCard = ({ image, name, role, description }: IProps) => {
             <Box >
                 <Center>
                     <Box display='flex' alignItems='baseline'>
-                        <Text fontSize='4xl'> <b>President</b></Text>
+                        <Text fontSize='4xl'> {name}</Text>
+                    </Box>
+                </Center>
+                <Center>
+                    <Box display='flex' alignItems='baseline'>
+                        <Text fontSize='2xl'> <b>{role}</b></Text>
                     </Box>
                 </Center>
                 <Box
@@ -48,13 +53,7 @@ const ExecCard = ({ image, name, role, description }: IProps) => {
 
                 <Box display='flex' maxH='10rem' overflowY='scroll' height='100%' p='0.5rem'>
                     <Text>
-                        Name: Taylor Adam
-                        Discord: @Taylor (Presidente)
-                        Instagram: @ taylortka
-                        Bio: hiii I&apos;m a fourth year systems engineer and my job is to run this whole thing smoothly and boss about my amazing exec team and do anything that needs doing ! I play bass in Rattlesnake, drum for The Kellys, and sing in Red Lamp. And also I really love music and live music and this society !!
-                        Top 3 Artists: Hippo Campus, King Gizzard and the Wizard Lizard, Peach Pit
-                        Favourite Album: iliwysfyasbysuoi by the 1975
-                        Guilty Pleasure: Carly Rae Jepsen except I don&apos;t feel guilty at all bcos she&apos;s incredible
+                        {description}
                     </Text>
 
                                         
