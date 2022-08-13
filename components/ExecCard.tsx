@@ -1,8 +1,9 @@
 import React from 'react'
-import { Box, Image, Badge, Center } from '@chakra-ui/react'
+import { Box, Image, Badge, Center, Text } from '@chakra-ui/react'
 
 interface IProps {
     image: string,
+    imageAlt: string,
     name: string,
     role: string,
     description: string,
@@ -21,51 +22,42 @@ const ExecCard = ({ image, name, role, description }: IProps) => {
     }
 
     return (
-        <Box maxW='20rem' borderWidth='3px' borderRadius='lg' overflow='hidden' >
+        <Box maxW='20rem' borderWidth='3px' borderRadius='lg' minH='30rem'>
 
             <Center>
-                <Image src={property.imageUrl} alt={property.imageAlt} borderRadius='full' boxSize='200px' mt='1rem'/>
+                <Image src={image} alt={property.imageAlt} borderRadius='full' boxSize='200px' mt='1rem' />
             </Center>
-            
-            <Box p='10'>
-                <Box display='flex' alignItems='baseline'>
-                    <Badge borderRadius='full' px='2' colorScheme='teal'>
-                        New
-                    </Badge>
-                    <Box
-                        color='gray.500'
-                        fontWeight='semibold'
-                        letterSpacing='wide'
-                        fontSize='xs'
-                        textTransform='uppercase'
-                        ml='2'
-                    >
-                        {property.beds} beds &bull; {property.baths} baths
-                    </Box>
-                </Box>
 
+
+            <Box >
+                <Center>
+                    <Box display='flex' alignItems='baseline'>
+                        <Text fontSize='4xl'> <b>President</b></Text>
+                    </Box>
+                </Center>
                 <Box
+                    ml='2'
                     mt='1'
                     fontWeight='semibold'
                     as='h4'
                     lineHeight='tight'
                     noOfLines={1}
                 >
-                    {property.title}
+                    About me:
                 </Box>
 
-                <Box>
-                    {property.formattedPrice}
-                    <Box as='span' color='gray.600' fontSize='sm'>
-                        / wk
-                    </Box>
-                </Box>
+                <Box display='flex' maxH='10rem' overflowY='scroll' height='100%' p='0.5rem'>
+                    <Text>
+                        Name: Taylor Adam
+                        Discord: @Taylor (Presidente)
+                        Instagram: @ taylortka
+                        Bio: hiii I&apos;m a fourth year systems engineer and my job is to run this whole thing smoothly and boss about my amazing exec team and do anything that needs doing ! I play bass in Rattlesnake, drum for The Kellys, and sing in Red Lamp. And also I really love music and live music and this society !!
+                        Top 3 Artists: Hippo Campus, King Gizzard and the Wizard Lizard, Peach Pit
+                        Favourite Album: iliwysfyasbysuoi by the 1975
+                        Guilty Pleasure: Carly Rae Jepsen except I don&apos;t feel guilty at all bcos she&apos;s incredible
+                    </Text>
 
-                <Box display='flex' mt='2' alignItems='center'>
-                    
-                    <Box as='span' ml='2' color='gray.600' fontSize='sm'>
-                        {property.reviewCount} reviews
-                    </Box>
+                                        
                 </Box>
             </Box>
         </Box>

@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       
       <br />
       
-      <ExecCard image='taylor' name='taylor' role='president' description='RATTLESNAKE bass' />
+      <ExecCard image='/images/tayloradam.png' imageAlt='taylor selfie' name='taylor' role='president' description='RATTLESNAKE bass' />
 
     </div>
   )
