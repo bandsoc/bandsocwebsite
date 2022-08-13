@@ -1,8 +1,10 @@
 import React from 'react'
 import NextLink from "next/link"
-import { HStack, Box, Spacer, Flex, Text, Link, Image } from '@chakra-ui/react'
+import { HStack, Box, Spacer, Flex, Text, Link, Image, Button, useColorMode } from '@chakra-ui/react'
 
 const Navbar = () => {
+    const { colorMode, toggleColorMode } = useColorMode()
+
     return (
         <Flex gap='5' direction="row" height="100%" mt='1rem' alignItems='center'>
             <Box boxSize='4rem' ml='1rem'   borderRadius='full'>
@@ -36,10 +38,10 @@ const Navbar = () => {
             </NextLink>
 
             <NextLink href='/signup' passHref> 
-                <Link mr='3rem' fontSize='2xl'>
+                <Link  fontSize='2xl' mr='3rem'>
                     Sign Up
                 </Link>  
-            </NextLink>      
+            </NextLink>    
         </Flex>
     )
 }
