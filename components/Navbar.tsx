@@ -1,13 +1,16 @@
 import React from 'react'
 import NextLink from "next/link"
-import { HStack, Box, Spacer, Flex, Text, Link } from '@chakra-ui/react'
+import { HStack, Box, Spacer, Flex, Text, Link, Image } from '@chakra-ui/react'
 
 const Navbar = () => {
     return (
-        <Flex gap='5' direction="row" height="100%" mt='1rem'>
+        <Flex gap='5' direction="row" height="100%" mt='1rem' alignItems='center'>
+            <Box boxSize='4rem' ml='1rem'   borderRadius='full'>
+                <Image src='/images/logo.png' alt='Bandsoc Logo' />
+            </Box>
 
             <NextLink href='/' passHref>
-                <Link ml='3rem' fontSize='2xl'>
+                <Link  fontSize='2xl'>
                     Home
                 </Link>
             </NextLink> 
