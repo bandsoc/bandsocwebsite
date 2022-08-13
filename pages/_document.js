@@ -6,10 +6,13 @@ export default class Document extends NextDocument {
     render() {
         return (
             <Html lang='en'>
-                <Head />
+                <Head>
+                    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+                    <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+
+                </Head>
                 <body>
                     {/* 👇 Here's the script */}
-                    <ColorModeScript initialColorMode={theme.config.initialColorMode} />
                     <Main />
                     <NextScript />
                 </body>
