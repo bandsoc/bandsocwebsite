@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Image, Badge } from '@chakra-ui/react'
+import { Box, Image, Badge, Center } from '@chakra-ui/react'
 
 interface IProps {
     image: string,
@@ -21,10 +21,13 @@ const ExecCard = ({ image, name, role, description }: IProps) => {
     }
 
     return (
-        <Box maxW='sm' borderWidth='3px' borderRadius='lg' overflow='hidden'>
-            <Image src={property.imageUrl} alt={property.imageAlt} />
+        <Box maxW='20rem' borderWidth='3px' borderRadius='lg' overflow='hidden' >
 
-            <Box p='6'>
+            <Center>
+                <Image src={property.imageUrl} alt={property.imageAlt} borderRadius='full' boxSize='200px' mt='1rem'/>
+            </Center>
+            
+            <Box p='10'>
                 <Box display='flex' alignItems='baseline'>
                     <Badge borderRadius='full' px='2' colorScheme='teal'>
                         New
