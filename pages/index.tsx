@@ -3,6 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import ExecCard from '../components/ExecCard'
+import { Flex, Box } from '@chakra-ui/react'
+
 
 interface ExecCard {
   image: string,
@@ -32,8 +34,12 @@ const Home: NextPage = () => {
       </Head>
       
       <br />
-      
-      <ExecCard image={taylor.image} imageAlt={taylor.imageAlt} name={taylor.name} role={taylor.role} description={taylor.description} />
+      <Flex width='100vw' direction='row' wrap='wrap' justifyContent='space-around'>
+        
+
+  
+
+      </Flex>
 
     </div>
   )

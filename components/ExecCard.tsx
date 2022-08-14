@@ -9,23 +9,14 @@ interface IProps {
     description: string,
 }
 
-const ExecCard = ({ image, name, role, description }: IProps) => {
-    const property = {
-        imageUrl: 'https://bit.ly/2Z4KKcF',
-        imageAlt: 'Rear view of modern home with pool',
-        beds: 3,
-        baths: 2,
-        title: 'Modern home in city center in the heart of historic Los Angeles',
-        formattedPrice: '$1,900.00',
-        reviewCount: 34,
-        rating: 4,
-    }
+const ExecCard = ({ image, imageAlt, name, role, description }: IProps) => {
+
 
     return (
         <Box maxW='20rem' borderWidth='3px' borderRadius='lg' minH='30rem'>
 
             <Center>
-                <Image src={image} alt={property.imageAlt} borderRadius='full' boxSize='200px' mt='1rem' />
+                <Image src={image} alt={imageAlt} borderRadius='full' boxSize='200px' mt='1rem' />
             </Center>
 
 
