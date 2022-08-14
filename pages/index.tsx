@@ -35,9 +35,6 @@ const Home: NextPage = () => {
       
       <br />
       <Flex width='100vw' direction='row' wrap='wrap' justifyContent='space-around'>
-        
-
-  
 
       </Flex>
 
