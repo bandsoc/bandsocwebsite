@@ -6,7 +6,7 @@ import { Flex, Box, Text, Image, Center } from '@chakra-ui/react'
 import CustomCarousel from '../components/CustomCarousel'
 import { ArrowDownIcon, ArrowBackIcon, ArrowForwardIcon } from '@chakra-ui/icons'
 import Layout from '../components/Layout'
-import React from 'react'
+import React, { useRef } from 'react'
 interface ExecCard {
   image: string,
   imageAlt: string,
@@ -15,7 +15,7 @@ interface ExecCard {
   description: string,
 }
 
-const taylorDescription: string = "Name: Taylor Adam Discord: @Taylor (Presidente) Instagram: @ taylortka Bio: hiii I'm a fourth year systems engineer and my job is to run this whole thing smoothly and boss about my amazing exec team and do anything that needs doing ! I play bass in Rattlesnake, drum for The Kellys, and sing in Red Lamp. And also I really love music and live music and this society !! Top 3 Artists: Hippo Campus, King Gizzard and the Wizard Lizard, Peach Pit Favourite Album: iliwysfyasbysuoi by the 1975 Guilty Pleasure: Carly Rae Jepsen except I don't feel guilty at all bcos she's incredible"
+const taylorDescription: string = "hiii I'm a fourth year systems engineer and my job is to run this whole thing smoothly and boss about my amazing exec team and do anything that needs doing ! I play bass in Rattlesnake, drum for The Kellys, and sing in Red Lamp. And also I really love music and live music and this society !! Top 3 Artists: Hippo Campus, King Gizzard and the Wizard Lizard, Peach Pit Favourite Album: iliwysfyasbysuoi by the 1975 Guilty Pleasure: Carly Rae Jepsen except I don't feel guilty at all bcos she's incredible"
 const taylor: ExecCard = {
   image: '/images/tayloradam.png',
   imageAlt: 'taylor selfie',
@@ -62,6 +62,12 @@ const ethan: ExecCard = {
 
 
 const Home: NextPage = () => {
+  const ref = useRef<null | HTMLDivElement>(null);
+
+  const handleClick = () => {
+    ref.current?.scrollIntoView({behavior: 'smooth'});
+  };
+
 
   return (
     <Box >
@@ -91,11 +97,11 @@ const Home: NextPage = () => {
           </Flex>
           <Center>
 
-            <ArrowDownIcon w={10} h={10} mt='10' />
+            <ArrowDownIcon w={10} h={10} mt='10' onClick={handleClick} cursor='pointer'/>
           </Center>
         </section>
 
-        <section className="two">
+        <section className="two" ref={ref}>
           <Center>
             <Text fontSize='4xl' mt='5'>Meet the <b>execs</b></Text>
           </Center>
@@ -112,7 +118,7 @@ const Home: NextPage = () => {
               </Box>
               <Box mt='5' mb='5' width='20em'  >
                 {/* CHECK NUMBER OF CHARACTERS IN INPUT STRINGS TO EXEC CARD AND MAKE FONT SMALLER TO MAKE IT FIT IF NECESSARY */}
-                <ExecCard image={noah.image} imageAlt={noah.imageAlt} name={noah.name} role={noah.role} description={noah.description} />
+                <ExecCard image={noah.image} imageAlt={noah.imageAlt} name='Noah Bezuix'role={noah.role} description={noah.description} />
               </Box>
               <Box mt='5' mb='5' width='20em'  >
                 <ExecCard image={ethan.image} imageAlt={ethan.imageAlt} name={ethan.name} role={ethan.role} description={ethan.description} />
