@@ -12,15 +12,37 @@ a {
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+    
   }
   body {
     color: white;
     background: black;
+    
+    width:100%;
+    overflow-x:hidden;
+    overflow-y:hidden;
   }
+}
+
+.two {
+  height:225vh
+}
+
+.container {
+  scroll-snap-type:y proximity;
+  overflow: scroll;
+  height: 100vh;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
 }

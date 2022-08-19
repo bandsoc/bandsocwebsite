@@ -2,6 +2,7 @@ import React from 'react'
 import { Box, Image, Badge, Center, Text } from '@chakra-ui/react'
 
 interface IProps {
+    itemId?: number,
     image: string,
     imageAlt: string,
     name: string,

@@ -6,7 +6,7 @@ const Layout = ({ children }: any) => {
 
     return (
         <>
-            <Flex direction='column' maxW='100%' minWidth='max-content' >
+            <Flex direction='column'  >
                 <Navbar />
                 {children}
             </Flex>
