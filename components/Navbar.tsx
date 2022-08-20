@@ -12,7 +12,7 @@ const Navbar = () => {
             </Box>
 
             <NextLink href='/' passHref>
-                <Link  fontSize='2xl'>
+                <Link fontSize='2xl'>
                     Home
                 </Link>
             </NextLink> 
