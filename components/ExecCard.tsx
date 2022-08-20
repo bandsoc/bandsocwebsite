@@ -19,8 +19,6 @@ const ExecCard = ({ image, imageAlt, name, role, description }: IProps) => {
             <Center>
                 <Image src={image} alt={imageAlt} borderRadius='full' boxSize='180px' mt='1rem'  />
             </Center>
-
-
             <Box >
                 <Center>
                     <Box display='flex' alignItems='baseline' maxW='100%'>
