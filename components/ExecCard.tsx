@@ -14,22 +14,22 @@ const ExecCard = ({ image, imageAlt, name, role, description }: IProps) => {
 
 
     return (
-        <Box maxW='20rem' borderWidth='3px' borderRadius='lg' minH='30rem'>
+        <Box maxW='20rem' borderWidth='4px' borderRadius='lg' minH='30rem'>
 
             <Center>
-                <Image src={image} alt={imageAlt} borderRadius='full' boxSize='200px' mt='1rem' />
+                <Image src={image} alt={imageAlt} borderRadius='full' boxSize='180px' mt='1rem'  />
             </Center>
 
 
             <Box >
                 <Center>
-                    <Box display='flex' alignItems='baseline'>
-                        <Text fontSize='4xl'> {name}</Text>
+                    <Box display='flex' alignItems='baseline' maxW='100%'>
+                        <Text fontSize='4xl' noOfLines={1}> {name}</Text>
                     </Box>
                 </Center>
                 <Center>
                     <Box display='flex' alignItems='baseline'>
-                        <Text fontSize='2xl'> <b>{role}</b></Text>
+                        <Text fontSize='2xl' > <b>{role}</b></Text>
                     </Box>
                 </Center>
                 <Box

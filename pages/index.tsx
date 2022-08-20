@@ -60,6 +60,46 @@ const ethan: ExecCard = {
   description: ethanDescription,
 }
 
+const oliDescription: string = "I'm a 2nd year maths student and I help out Ethan with all things tech! I'm a drummer and was so bad at breaking things last year that I felt guilty and took on this role 🥺🥺 You'll also see me running the odd circle/social event. My main band is Feed the Mammoth 🦣🦣🦣 but if you ever need a drummer for your project, drop me a message and see if I'm available because I love new projects..."
+const oli: ExecCard = {
+  image: '/images/oli.png',
+  imageAlt: 'Oli selfie',
+  name: 'Oli Brown',
+  role: 'Deputy Tech',
+  description: oliDescription,
+}
+
+const jasperDescription: string = "I am a 2nd PPE student. As publicity officer my job is to market all BandSoc events. This involves creating posters, running the social media accounts and advertising all the events we run as a society. I also help out with the general running of the society. I play guitar for Sunny Side Down, (@sunnysidedownband on instagram and tiktok)! I also like to sing some of my own stuff like a soft indie boy (jasperlarsen on tiktok)"
+const jasper: ExecCard = {
+  image: '/images/jasper.png',
+  imageAlt: 'Jasper selfie',
+  name: 'Jasper Chance-Larsen',
+  role: 'Publicity',
+  description: jasperDescription,
+}
+
+const emreDescription: string = "I'm a 2nd year Maths & CS student, and as the webmaster, I'll be your contact for any spreadsheet related problems, and I also help maintain the website of BandSoc. I'm currently the songwriter and the guitarist of the lovely noisy post-punk band Roman Candles. Also, as a big blueshead I'm looking forward to doing some bluesy stuff this year, stay tuned for that 🙂"
+const emre: ExecCard = {
+  image: '/images/emre.png',
+  imageAlt: 'Emre selfie',
+  name: 'Emre Ulusoy',
+  role: 'Webmaster',
+  description: emreDescription,
+}
+
+const noahMeddDescription: string = "I'm a 3rd year Philosophy student. I'm the guy that runs around taking pics that you get 1-2 working months later :)) I currently play guitar and sing in The Kellys (indie rock). If you like Queen I will be your favourite exec member."
+const noahMedd: ExecCard = {
+  image: '/images/noahMedd.png',
+  imageAlt: 'Noah selfie',
+  name: 'Noah Medd',
+  role: 'Photographer',
+  description: noahMeddDescription,
+}
+
+
+
+
+
 
 const Home: NextPage = () => {
   const ref = useRef<null | HTMLDivElement>(null);
@@ -124,16 +164,16 @@ const Home: NextPage = () => {
                 <ExecCard image={ethan.image} imageAlt={ethan.imageAlt} name={ethan.name} role={ethan.role} description={ethan.description} />
               </Box>
               <Box mt='5' mb='5' width='20em'  >
-                <ExecCard image={taylor.image} imageAlt={taylor.imageAlt} name={taylor.name} role={taylor.role} description={taylor.description} />
+                <ExecCard image={oli.image} imageAlt={oli.imageAlt} name={oli.name} role={oli.role} description={oli.description} />
               </Box>
               <Box mt='5' mb='5' width='20em' >
-                <ExecCard image={taylor.image} imageAlt={taylor.imageAlt} name={taylor.name} role={taylor.role} description={taylor.description} />
+                <ExecCard image={jasper.image} imageAlt={jasper.imageAlt} name={jasper.name} role={jasper.role} description={jasper.description} />
               </Box>
               <Box mt='5' mb='5' width='20em'  >
-                <ExecCard image={taylor.image} imageAlt={taylor.imageAlt} name={taylor.name} role={taylor.role} description={taylor.description} />
+                <ExecCard image={emre.image} imageAlt={emre.imageAlt} name={emre.name} role={emre.role} description={emre.description} />
               </Box>
               <Box mt='5' mb='5' width='20em' >
-                <ExecCard image={taylor.image} imageAlt={taylor.imageAlt} name={taylor.name} role={taylor.role} description={taylor.description} />
+                <ExecCard image={noahMedd.image} imageAlt={noahMedd.imageAlt} name={noahMedd.name} role={noahMedd.role} description={noahMedd.description} />
               </Box>
 
             </Flex>
