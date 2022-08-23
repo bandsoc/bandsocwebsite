@@ -108,17 +108,19 @@ const noahMedd: ExecCard = {
   description: noahMeddDescription,
 }
 
-
-
-
-
-
 const Home: NextPage = () => {
-  const ref = useRef<null | HTMLDivElement>(null);
+  const refOne = useRef<null | HTMLDivElement>(null);
 
-  const handleClick = () => {
-    ref.current?.scrollIntoView({ behavior: 'smooth' });
+  const handleClickOne = () => {
+    refOne.current?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  const refTwo = useRef<null | HTMLDivElement>(null);
+
+  const handleClickTwo = () => {
+    refTwo.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
 
 
   return (
@@ -148,12 +150,11 @@ const Home: NextPage = () => {
             </Box>
           </Flex>
           <Center>
-
-            <ArrowDownIcon w={10} h={10} mt='10' onClick={handleClick} cursor='pointer' />
+            <ArrowDownIcon w={10} h={10} mt='10' onClick={handleClickOne} cursor='pointer' />
           </Center>
         </section>
 
-        <section className="two" ref={ref}>
+        <section className="two" ref={refOne}>
           <Center>
             <Text fontSize='4xl' mt='5'>Meet the <b>execs</b></Text>
           </Center>
@@ -218,12 +219,14 @@ const Home: NextPage = () => {
                 </Box>
               </SwiperSlide>
             </Center>
-
           </Swiper>
+          <Center>
+            <ArrowDownIcon w={10} h={10} mt='10' onClick={handleClickTwo} cursor='pointer' />
+          </Center>
 
         </section>
 
-        <section className="three">
+        <section className="three" ref={refTwo}>
           <Center>
             <Text fontSize='4xl' mt='5'>Events</Text>
           </Center>
