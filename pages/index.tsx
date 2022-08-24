@@ -18,7 +18,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation, Autoplay } from "swiper";
 interface ExecCard {
   image: string,
   imageAlt: string,
@@ -138,11 +138,37 @@ const Home: NextPage = () => {
         <section className="one" ref={refThree}>
           <Layout />
           <Flex justifyContent='space-around' >
-            <Box ml='10%' mt='2%' width='35%' borderStyle='solid' >
-              <Image src='https://i.scdn.co/image/a4e10b79a642e9891383448cbf37d7266a6883d6' alt='Dan Abramov' />
+
+            <Box ml='10%' mt='2%' width='35%' borderStyle='solid' height='50%'>
+              <Swiper
+                spaceBetween={30}
+                centeredSlides={true}
+                autoplay={{
+                  delay: 4000,
+                  disableOnInteraction: false,
+                }}
+                pagination={{
+                  clickable: true,
+                }}
+                navigation={true}
+                modules={[Autoplay, Pagination, Navigation]}
+              >
+
+                <SwiperSlide>
+                  <Image src='https://i.scdn.co/image/a4e10b79a642e9891383448cbf37d7266a6883d6' alt='Dan Abramov' />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image src='https://i.scdn.co/image/a4e10b79a642e9891383448cbf37d7266a6883d6' alt='Dan Abramov' />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image src='https://i.scdn.co/image/a4e10b79a642e9891383448cbf37d7266a6883d6' alt='Dan Abramov' />
+                </SwiperSlide>
+
+              </Swiper>
             </Box>
 
-            <Box mr='10%' mt='2%' width='35%' borderStyle='solid' >
+
+            <Box mr='10%' mt='2%' width='35%' borderStyle='solid' maxH='100%' >
               <Text fontSize='4xl'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
@@ -254,7 +280,7 @@ const Home: NextPage = () => {
 
 
           <Center>
-            <ArrowUpIcon w={10} h={10}  onClick={handleClickThree} cursor='pointer' />
+            <ArrowUpIcon w={10} h={10} onClick={handleClickThree} cursor='pointer' />
           </Center>
         </section>
 
