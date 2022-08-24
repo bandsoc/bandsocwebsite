@@ -7,6 +7,7 @@ import CustomCarousel from '../components/CustomCarousel'
 import { ArrowDownIcon, ArrowUpIcon } from '@chakra-ui/icons'
 import Layout from '../components/Layout'
 import React, { useRef } from 'react'
+import { InstagramEmbed } from 'react-social-media-embed';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -158,7 +159,7 @@ const Home: NextPage = () => {
           <Center>
             <Text fontSize='4xl' mt='5'>Meet the <b>execs</b></Text>
           </Center>
-          
+
           <Swiper
             slidesPerView={3}
             spaceBetween={30}
@@ -231,12 +232,14 @@ const Home: NextPage = () => {
           <Center>
             <Text fontSize='4xl' mt='5'>Events</Text>
           </Center>
-
+          <Box style={{ display: 'flex', justifyContent: 'center' }} mt='5'>
+            <InstagramEmbed url="https://www.instagram.com/p/ChZnU1-KmQB/" width={500} height={550} />
+          </Box>
           <Center>
             <ArrowUpIcon w={10} h={10} mt='10' onClick={handleClickThree} cursor='pointer' />
           </Center>
         </section>
-        
+
       </Box>
 
     </Box>
