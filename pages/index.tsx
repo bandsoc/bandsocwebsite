@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 import ExecCard from '../components/ExecCard'
 import { Flex, Box, Text, Image, Center } from '@chakra-ui/react'
 import CustomCarousel from '../components/CustomCarousel'
-import { ArrowDownIcon, ArrowBackIcon, ArrowForwardIcon } from '@chakra-ui/icons'
+import { ArrowDownIcon, ArrowUpIcon } from '@chakra-ui/icons'
 import Layout from '../components/Layout'
 import React, { useRef } from 'react'
 // Import Swiper React components
@@ -119,6 +119,12 @@ const Home: NextPage = () => {
     refTwo.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const refThree = useRef<null | HTMLDivElement>(null);
+
+  const handleClickThree = () => {
+    refThree.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <Box >
       <Head>
@@ -127,7 +133,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Box className='container'>
-        <section className="one">
+        <section className="one" ref={refThree}>
           <Layout />
           <Flex justifyContent='space-around' >
             <Box ml='10%' mt='2%' width='35%' borderStyle='solid' >
@@ -224,6 +230,10 @@ const Home: NextPage = () => {
         <section className="three" ref={refTwo}>
           <Center>
             <Text fontSize='4xl' mt='5'>Events</Text>
+          </Center>
+
+          <Center>
+            <ArrowUpIcon w={10} h={10} mt='10' onClick={handleClickThree} cursor='pointer' />
           </Center>
         </section>
         
