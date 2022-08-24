@@ -144,8 +144,7 @@ const Home: NextPage = () => {
             <Box mr='10%' mt='2%' width='35%' borderStyle='solid' >
               <Text fontSize='4xl'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                <br />
-                <br />
+                
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
               </Text>
             </Box>
@@ -232,7 +231,7 @@ const Home: NextPage = () => {
           <Center>
             <Text fontSize='4xl' mt='5'>Events</Text>
           </Center>
-          <Box style={{ display: 'flex', justifyContent: 'center' }} mt='5'>
+          <Box style={{ display: 'flex', justifyContent: 'center' }} mt='9'>
             <InstagramEmbed url="https://www.instagram.com/p/ChZnU1-KmQB/" width={500} height={550} />
           </Box>
           <Center>
