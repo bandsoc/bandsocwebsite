@@ -15,8 +15,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-
-
 // import required modules
 import { Pagination, Navigation } from "swiper";
 interface ExecCard {
@@ -121,16 +119,12 @@ const Home: NextPage = () => {
     refTwo.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-
-
   return (
     <Box >
       <Head>
         <title>Home</title>
         <meta property="og:title" content="Bandsoc Home Page" key="title" />
       </Head>
-
-
 
       <Box className='container'>
         <section className="one">
@@ -158,6 +152,7 @@ const Home: NextPage = () => {
           <Center>
             <Text fontSize='4xl' mt='5'>Meet the <b>execs</b></Text>
           </Center>
+          
           <Swiper
             slidesPerView={3}
             spaceBetween={30}
@@ -231,6 +226,7 @@ const Home: NextPage = () => {
             <Text fontSize='4xl' mt='5'>Events</Text>
           </Center>
         </section>
+        
       </Box>
 
     </Box>
