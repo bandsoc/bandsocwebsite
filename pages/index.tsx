@@ -8,6 +8,7 @@ import { ArrowDownIcon, ArrowUpIcon } from '@chakra-ui/icons'
 import Layout from '../components/Layout'
 import React, { useRef } from 'react'
 import { InstagramEmbed } from 'react-social-media-embed';
+import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -144,7 +145,7 @@ const Home: NextPage = () => {
             <Box mr='10%' mt='2%' width='35%' borderStyle='solid' >
               <Text fontSize='4xl'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                
+
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
               </Text>
             </Box>
@@ -231,11 +232,29 @@ const Home: NextPage = () => {
           <Center>
             <Text fontSize='4xl' mt='5'>Events</Text>
           </Center>
-          <Box style={{ display: 'flex', justifyContent: 'center' }} mt='9'>
-            <InstagramEmbed url="https://www.instagram.com/p/ChZnU1-KmQB/" width={500} height={550} />
-          </Box>
+
+          <Tabs variant='soft-rounded' colorScheme='purple' align='center'>
+            <TabList>
+              <Tab>Featured</Tab>
+              <Tab>Term Events</Tab>
+            </TabList>
+            <TabPanels>
+              <TabPanel>
+                <Box style={{ display: 'flex', justifyContent: 'center' }} >
+                  <InstagramEmbed url="https://www.instagram.com/p/ChZnU1-KmQB/" width={500} height={550} />
+                </Box>
+              </TabPanel>
+              <TabPanel>
+                <Box style={{ display: 'flex', justifyContent: 'center' }} >
+                  <InstagramEmbed url="https://www.instagram.com/p/CclSNY5K5ph/" width={500} height={550} />
+                </Box>
+              </TabPanel>
+            </TabPanels>
+          </Tabs>
+
+
           <Center>
-            <ArrowUpIcon w={10} h={10} mt='10' onClick={handleClickThree} cursor='pointer' />
+            <ArrowUpIcon w={10} h={10}  onClick={handleClickThree} cursor='pointer' />
           </Center>
         </section>
 
