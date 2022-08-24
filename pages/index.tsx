@@ -7,6 +7,16 @@ import CustomCarousel from '../components/CustomCarousel'
 import { ArrowDownIcon, ArrowBackIcon, ArrowForwardIcon } from '@chakra-ui/icons'
 import Layout from '../components/Layout'
 import React, { useRef } from 'react'
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Pagination, Navigation } from "swiper";
 interface ExecCard {
   image: string,
   imageAlt: string,
@@ -96,18 +106,18 @@ const noahMedd: ExecCard = {
   description: noahMeddDescription,
 }
 
-
-
-
-
-
 const Home: NextPage = () => {
-  const ref = useRef<null | HTMLDivElement>(null);
+  const refOne = useRef<null | HTMLDivElement>(null);
 
-  const handleClick = () => {
-    ref.current?.scrollIntoView({behavior: 'smooth'});
+  const handleClickOne = () => {
+    refOne.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const refTwo = useRef<null | HTMLDivElement>(null);
+
+  const handleClickTwo = () => {
+    refTwo.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <Box >
@@ -115,8 +125,6 @@ const Home: NextPage = () => {
         <title>Home</title>
         <meta property="og:title" content="Bandsoc Home Page" key="title" />
       </Head>
-
-
 
       <Box className='container'>
         <section className="one">
@@ -136,56 +144,89 @@ const Home: NextPage = () => {
             </Box>
           </Flex>
           <Center>
-
-            <ArrowDownIcon w={10} h={10} mt='10' onClick={handleClick} cursor='pointer'/>
+            <ArrowDownIcon w={10} h={10} mt='10' onClick={handleClickOne} cursor='pointer' />
           </Center>
         </section>
 
-        <section className="two" ref={ref}>
+        <section className="two" ref={refOne}>
           <Center>
             <Text fontSize='4xl' mt='5'>Meet the <b>execs</b></Text>
           </Center>
+          
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            slidesPerGroup={3}
+            loop={true}
+            loopFillGroupWithBlank={true}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <Center>
+              <SwiperSlide>
+                <Box mt='5' mb='5' width='20em'  >
+                  <ExecCard image={taylor.image} imageAlt={taylor.imageAlt} name={taylor.name} role={taylor.role} description={taylor.description} />
+                </Box>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Box mt='5' mb='5' width='20em'   >
+                  <ExecCard image={luke.image} imageAlt={luke.imageAlt} name={luke.name} role={luke.role} description={luke.description} />
+                </Box>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Box mt='5' mb='5' width='20em'  >
+                  <ExecCard image={robbie.image} imageAlt={robbie.imageAlt} name={robbie.name} role={robbie.role} description={robbie.description} />
+                </Box>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Box mt='5' mb='5' width='20em'  >
+                  {/* CHECK NUMBER OF CHARACTERS IN INPUT STRINGS TO EXEC CARD AND MAKE FONT SMALLER TO MAKE IT FIT IF NECESSARY */}
+                  <ExecCard image={noah.image} imageAlt={noah.imageAlt} name='Noah Bezuix' role={noah.role} description={noah.description} />
+                </Box>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Box mt='5' mb='5' width='20em'  >
+                  <ExecCard image={ethan.image} imageAlt={ethan.imageAlt} name={ethan.name} role={ethan.role} description={ethan.description} />
+                </Box>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Box mt='5' mb='5' width='20em'  >
+                  <ExecCard image={oli.image} imageAlt={oli.imageAlt} name={oli.name} role={oli.role} description={oli.description} />
+                </Box>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Box mt='5' mb='5' width='20em' >
+                  <ExecCard image={jasper.image} imageAlt={jasper.imageAlt} name={jasper.name} role={jasper.role} description={jasper.description} />
+                </Box>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Box mt='5' mb='5' width='20em'  >
+                  <ExecCard image={emre.image} imageAlt={emre.imageAlt} name={emre.name} role={emre.role} description={emre.description} />
+                </Box>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Box mt='5' mb='5' width='20em' >
+                  <ExecCard image={noahMedd.image} imageAlt={noahMedd.imageAlt} name={noahMedd.name} role={noahMedd.role} description={noahMedd.description} />
+                </Box>
+              </SwiperSlide>
+            </Center>
+          </Swiper>
           <Center>
-            <Flex justifyContent='space-between' flexWrap='wrap' m='5' width='80%'>  
-              <Box mt='5' mb='5' width='20em'  >
-                <ExecCard image={taylor.image} imageAlt={taylor.imageAlt} name={taylor.name} role={taylor.role} description={taylor.description} />
-              </Box>
-              <Box mt='5' mb='5' width='20em'   >
-                <ExecCard image={luke.image} imageAlt={luke.imageAlt} name={luke.name} role={luke.role} description={luke.description} />
-              </Box>
-              <Box mt='5' mb='5' width='20em'  >
-                <ExecCard image={robbie.image} imageAlt={robbie.imageAlt} name={robbie.name} role={robbie.role} description={robbie.description} />
-              </Box>
-              <Box mt='5' mb='5' width='20em'  >
-                {/* CHECK NUMBER OF CHARACTERS IN INPUT STRINGS TO EXEC CARD AND MAKE FONT SMALLER TO MAKE IT FIT IF NECESSARY */}
-                <ExecCard image={noah.image} imageAlt={noah.imageAlt} name='Noah Bezuix'role={noah.role} description={noah.description} />
-              </Box>
-              <Box mt='5' mb='5' width='20em'  >
-                <ExecCard image={ethan.image} imageAlt={ethan.imageAlt} name={ethan.name} role={ethan.role} description={ethan.description} />
-              </Box>
-              <Box mt='5' mb='5' width='20em'  >
-                <ExecCard image={oli.image} imageAlt={oli.imageAlt} name={oli.name} role={oli.role} description={oli.description} />
-              </Box>
-              <Box mt='5' mb='5' width='20em' >
-                <ExecCard image={jasper.image} imageAlt={jasper.imageAlt} name={jasper.name} role={jasper.role} description={jasper.description} />
-              </Box>
-              <Box mt='5' mb='5' width='20em'  >
-                <ExecCard image={emre.image} imageAlt={emre.imageAlt} name={emre.name} role={emre.role} description={emre.description} />
-              </Box>
-              <Box mt='5' mb='5' width='20em' >
-                <ExecCard image={noahMedd.image} imageAlt={noahMedd.imageAlt} name={noahMedd.name} role={noahMedd.role} description={noahMedd.description} />
-              </Box>
-
-            </Flex>
+            <ArrowDownIcon w={10} h={10} mt='10' onClick={handleClickTwo} cursor='pointer' />
           </Center>
 
         </section>
 
-        <section className="three">
+        <section className="three" ref={refTwo}>
           <Center>
             <Text fontSize='4xl' mt='5'>Events</Text>
           </Center>
         </section>
+        
       </Box>
 
     </Box>
