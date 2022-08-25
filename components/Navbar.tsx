@@ -7,7 +7,7 @@ const Navbar = () => {
 
     return (
         <Flex gap='5' direction="row" height="100%" mt='1rem' alignItems='center'>
-            <Box boxSize='4rem' ml='1rem'   borderRadius='full'>
+            <Box boxSize='4rem' ml='1rem' borderRadius='full'>
                 <Image src='/images/logo.png' alt='Bandsoc Logo' />
             </Box>
 
@@ -15,7 +15,7 @@ const Navbar = () => {
                 <Link fontSize='2xl'>
                     Home
                 </Link>
-            </NextLink> 
+            </NextLink>
 
             <NextLink href='/practiceroom' passHref>
                 <Link fontSize='2xl'>
@@ -31,17 +31,17 @@ const Navbar = () => {
 
             <Spacer />
 
-            <NextLink href='/login' passHref> 
+            <NextLink href='/login' passHref>
                 <Link fontSize='2xl'>
                     Log in
                 </Link>
             </NextLink>
 
-            <NextLink href='/signup' passHref> 
-                <Link  fontSize='2xl' mr='3rem'>
+            <NextLink href='/signup' passHref>
+                <Link fontSize='2xl' mr='3rem'>
                     Sign Up
-                </Link>  
-            </NextLink>    
+                </Link>
+            </NextLink>
         </Flex>
     )
 }

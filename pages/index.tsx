@@ -187,9 +187,9 @@ const Home: NextPage = () => {
           </Center>
 
           <Swiper
-            slidesPerView={3}
+            slidesPerView={1}
             spaceBetween={30}
-            slidesPerGroup={3}
+            slidesPerGroup={1}
             loop={true}
             loopFillGroupWithBlank={true}
             pagination={{
@@ -198,55 +198,72 @@ const Home: NextPage = () => {
             navigation={true}
             modules={[Pagination, Navigation]}
             className="mySwiper"
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                spaceBetween: 50,
+              },
+            }}
           >
-            <Center>
-              <SwiperSlide>
-                <Box mt='5' mb='5' width='20em'  >
-                  <ExecCard image={taylor.image} imageAlt={taylor.imageAlt} name={taylor.name} role={taylor.role} description={taylor.description} />
-                </Box>
-              </SwiperSlide>
-              <SwiperSlide>
-                <Box mt='5' mb='5' width='20em'   >
-                  <ExecCard image={luke.image} imageAlt={luke.imageAlt} name={luke.name} role={luke.role} description={luke.description} />
-                </Box>
-              </SwiperSlide>
-              <SwiperSlide>
-                <Box mt='5' mb='5' width='20em'  >
-                  <ExecCard image={robbie.image} imageAlt={robbie.imageAlt} name={robbie.name} role={robbie.role} description={robbie.description} />
-                </Box>
-              </SwiperSlide>
-              <SwiperSlide>
-                <Box mt='5' mb='5' width='20em'  >
-                  {/* CHECK NUMBER OF CHARACTERS IN INPUT STRINGS TO EXEC CARD AND MAKE FONT SMALLER TO MAKE IT FIT IF NECESSARY */}
-                  <ExecCard image={noah.image} imageAlt={noah.imageAlt} name='Noah Bezuix' role={noah.role} description={noah.description} />
-                </Box>
-              </SwiperSlide>
-              <SwiperSlide>
-                <Box mt='5' mb='5' width='20em'  >
-                  <ExecCard image={ethan.image} imageAlt={ethan.imageAlt} name={ethan.name} role={ethan.role} description={ethan.description} />
-                </Box>
-              </SwiperSlide>
-              <SwiperSlide>
-                <Box mt='5' mb='5' width='20em'  >
-                  <ExecCard image={oli.image} imageAlt={oli.imageAlt} name={oli.name} role={oli.role} description={oli.description} />
-                </Box>
-              </SwiperSlide>
-              <SwiperSlide>
-                <Box mt='5' mb='5' width='20em' >
-                  <ExecCard image={jasper.image} imageAlt={jasper.imageAlt} name={jasper.name} role={jasper.role} description={jasper.description} />
-                </Box>
-              </SwiperSlide>
-              <SwiperSlide>
-                <Box mt='5' mb='5' width='20em'  >
-                  <ExecCard image={emre.image} imageAlt={emre.imageAlt} name={emre.name} role={emre.role} description={emre.description} />
-                </Box>
-              </SwiperSlide>
-              <SwiperSlide>
-                <Box mt='5' mb='5' width='20em' >
-                  <ExecCard image={noahMedd.image} imageAlt={noahMedd.imageAlt} name={noahMedd.name} role={noahMedd.role} description={noahMedd.description} />
-                </Box>
-              </SwiperSlide>
-            </Center>
+
+            <SwiperSlide>
+              <Box mt='5' mb='5' width='20em'  >
+                <ExecCard image={taylor.image} imageAlt={taylor.imageAlt} name={taylor.name} role={taylor.role} description={taylor.description} />
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box mt='5' mb='5' width='20em'   >
+                <ExecCard image={luke.image} imageAlt={luke.imageAlt} name={luke.name} role={luke.role} description={luke.description} />
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box mt='5' mb='5' width='20em'  >
+                <ExecCard image={robbie.image} imageAlt={robbie.imageAlt} name={robbie.name} role={robbie.role} description={robbie.description} />
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box mt='5' mb='5' width='20em'  >
+                {/* CHECK NUMBER OF CHARACTERS IN INPUT STRINGS TO EXEC CARD AND MAKE FONT SMALLER TO MAKE IT FIT IF NECESSARY */}
+                <ExecCard image={noah.image} imageAlt={noah.imageAlt} name='Noah Bezuix' role={noah.role} description={noah.description} />
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box mt='5' mb='5' width='20em'  >
+                <ExecCard image={ethan.image} imageAlt={ethan.imageAlt} name={ethan.name} role={ethan.role} description={ethan.description} />
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box mt='5' mb='5' width='20em'  >
+                <ExecCard image={oli.image} imageAlt={oli.imageAlt} name={oli.name} role={oli.role} description={oli.description} />
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box mt='5' mb='5' width='20em' >
+                <ExecCard image={jasper.image} imageAlt={jasper.imageAlt} name={jasper.name} role={jasper.role} description={jasper.description} />
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box mt='5' mb='5' width='20em'  >
+                <ExecCard image={emre.image} imageAlt={emre.imageAlt} name={emre.name} role={emre.role} description={emre.description} />
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box mt='5' mb='5' width='20em' >
+                <ExecCard image={noahMedd.image} imageAlt={noahMedd.imageAlt} name={noahMedd.name} role={noahMedd.role} description={noahMedd.description} />
+              </Box>
+            </SwiperSlide>
+
           </Swiper>
           <Center>
             <ArrowDownIcon w={10} h={10} mt='10' onClick={handleClickTwo} cursor='pointer' />
@@ -277,8 +294,6 @@ const Home: NextPage = () => {
               </TabPanel>
             </TabPanels>
           </Tabs>
-
-
           <Center>
             <ArrowUpIcon w={10} h={10} onClick={handleClickThree} cursor='pointer' />
           </Center>
