@@ -153,7 +153,6 @@ const Home: NextPage = () => {
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
               >
-
                 <SwiperSlide>
                   <Image src='https://i.scdn.co/image/a4e10b79a642e9891383448cbf37d7266a6883d6' alt='Dan Abramov' />
                 </SwiperSlide>
@@ -188,7 +187,7 @@ const Home: NextPage = () => {
 
           <Swiper
             slidesPerView={1}
-            spaceBetween={30}
+            spaceBetween={0}
             slidesPerGroup={1}
             loop={true}
             loopFillGroupWithBlank={true}
