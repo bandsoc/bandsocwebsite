@@ -20,16 +20,17 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
-    
+
   }
+
   body {
     color: white;
     background: black;
     overflow: hidden;
 
-    width:100%;
-    overflow-x:hidden;
-    overflow-y:hidden;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 }
 
@@ -58,11 +59,8 @@ a {
   align-items: center;
 }
 
-
-
-
 .container {
-  scroll-snap-type:y proximity;
+  scroll-snap-type: y proximity;
   overflow: scroll;
   height: 100vh;
 }
@@ -71,3 +69,4 @@ section {
   height: 100vh;
   scroll-snap-align: start;
 }
+

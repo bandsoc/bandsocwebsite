@@ -4,9 +4,11 @@ import styles from '../styles/Home.module.css'
 import ExecCard from '../components/ExecCard'
 import { Flex, Box, Text, Image, Center } from '@chakra-ui/react'
 import CustomCarousel from '../components/CustomCarousel'
-import { ArrowDownIcon, ArrowBackIcon, ArrowForwardIcon } from '@chakra-ui/icons'
+import { ArrowDownIcon, ArrowUpIcon } from '@chakra-ui/icons'
 import Layout from '../components/Layout'
 import React, { useRef } from 'react'
+import { InstagramEmbed } from 'react-social-media-embed';
+import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -16,7 +18,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation, Autoplay } from "swiper";
 interface ExecCard {
   image: string,
   imageAlt: string,
@@ -119,6 +121,12 @@ const Home: NextPage = () => {
     refTwo.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const refThree = useRef<null | HTMLDivElement>(null);
+
+  const handleClickThree = () => {
+    refThree.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <Box >
       <Head>
@@ -127,18 +135,43 @@ const Home: NextPage = () => {
       </Head>
 
       <Box className='container'>
-        <section className="one">
+        <section className="one" ref={refThree}>
           <Layout />
-          <Flex justifyContent='space-around' >
-            <Box ml='10%' mt='2%' width='35%' borderStyle='solid' >
-              <Image src='https://i.scdn.co/image/a4e10b79a642e9891383448cbf37d7266a6883d6' alt='Dan Abramov' />
+          <Flex justifyContent='space-around' className='landing' >
+
+            <Box ml='10%' mt='2%' width='35%' borderStyle='solid' height='50%'>
+              <Swiper
+                spaceBetween={30}
+                centeredSlides={true}
+                autoplay={{
+                  delay: 4000,
+                  disableOnInteraction: false,
+                }}
+                pagination={{
+                  clickable: true,
+                }}
+                navigation={true}
+                modules={[Autoplay, Pagination, Navigation]}
+              >
+
+                <SwiperSlide>
+                  <Image src='https://i.scdn.co/image/a4e10b79a642e9891383448cbf37d7266a6883d6' alt='Dan Abramov' />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image src='https://i.scdn.co/image/a4e10b79a642e9891383448cbf37d7266a6883d6' alt='Dan Abramov' />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image src='https://i.scdn.co/image/a4e10b79a642e9891383448cbf37d7266a6883d6' alt='Dan Abramov' />
+                </SwiperSlide>
+
+              </Swiper>
             </Box>
 
-            <Box mr='10%' mt='2%' width='35%' borderStyle='solid' >
-              <Text fontSize='4xl'>
+
+            <Box mr='10%' mt='2%' width='35%' borderStyle='solid' maxH='100%' >
+              <Text fontSize={{ base: '16px', md: '20px', lg: '40px' }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                <br />
-                <br />
+
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
               </Text>
             </Box>
@@ -152,7 +185,7 @@ const Home: NextPage = () => {
           <Center>
             <Text fontSize='4xl' mt='5'>Meet the <b>execs</b></Text>
           </Center>
-          
+
           <Swiper
             slidesPerView={3}
             spaceBetween={30}
@@ -225,8 +258,32 @@ const Home: NextPage = () => {
           <Center>
             <Text fontSize='4xl' mt='5'>Events</Text>
           </Center>
+
+          <Tabs variant='soft-rounded' colorScheme='purple' align='center'>
+            <TabList>
+              <Tab>Featured</Tab>
+              <Tab>Term Events</Tab>
+            </TabList>
+            <TabPanels>
+              <TabPanel>
+                <Box style={{ display: 'flex', justifyContent: 'center' }} >
+                  <InstagramEmbed url="https://www.instagram.com/p/ChZnU1-KmQB/" width={500} height={550} />
+                </Box>
+              </TabPanel>
+              <TabPanel>
+                <Box style={{ display: 'flex', justifyContent: 'center' }} >
+                  <InstagramEmbed url="https://www.instagram.com/p/CclSNY5K5ph/" width={500} height={550} />
+                </Box>
+              </TabPanel>
+            </TabPanels>
+          </Tabs>
+
+
+          <Center>
+            <ArrowUpIcon w={10} h={10} onClick={handleClickThree} cursor='pointer' />
+          </Center>
         </section>
-        
+
       </Box>
 
     </Box>
