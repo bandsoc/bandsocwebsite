@@ -2,6 +2,8 @@ import { extendTheme, type ThemeConfig } from '@chakra-ui/react'
 import { mode } from "@chakra-ui/theme-tools";
 import { Dict } from "@chakra-ui/utils";
 
+
+
 const config: ThemeConfig = {
     useSystemColorMode: false,
     initialColorMode: 'light',
