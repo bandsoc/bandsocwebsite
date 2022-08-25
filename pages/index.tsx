@@ -137,7 +137,7 @@ const Home: NextPage = () => {
       <Box className='container'>
         <section className="one" ref={refThree}>
           <Layout />
-          <Flex justifyContent='space-around' >
+          <Flex justifyContent='space-around' className='landing' >
 
             <Box ml='10%' mt='2%' width='35%' borderStyle='solid' height='50%'>
               <Swiper
@@ -169,7 +169,7 @@ const Home: NextPage = () => {
 
 
             <Box mr='10%' mt='2%' width='35%' borderStyle='solid' maxH='100%' >
-              <Text fontSize='4xl'>
+              <Text fontSize={{ base: '16px', md: '20px', lg: '40px' }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
