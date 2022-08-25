@@ -6,10 +6,13 @@ const Navbar = () => {
     const { colorMode, toggleColorMode } = useColorMode()
 
     return (
-        <Flex gap='5' direction="row" height="100%" mt='1rem' alignItems='center'>
+        <Flex gap='5' direction="row" height="100%" mt='1rem' alignItems='center'
+            display={['none', 'none', 'flex', 'flex', 'flex']}>
             <Box boxSize='4rem' ml='1rem' borderRadius='full'>
                 <Image src='/images/logo.png' alt='Bandsoc Logo' />
             </Box>
+
+
 
             <NextLink href='/' passHref>
                 <Link fontSize='2xl'>
