@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import ExecCard from '../components/ExecCard'
 import { Flex, Box, Text, Image, Center } from '@chakra-ui/react'
-import { ArrowDownIcon, ArrowUpIcon } from '@chakra-ui/icons'
+import { ArrowDownIcon, ArrowUpIcon, HamburgerIcon } from '@chakra-ui/icons'
 import Layout from '../components/Layout'
 import React, { useRef } from 'react'
 import { InstagramEmbed } from 'react-social-media-embed';
@@ -135,9 +135,9 @@ const Home: NextPage = () => {
       <Box className='container'>
         <section className="one" ref={refThree}>
           <Layout />
-          <Flex justifyContent='space-around' className='landing' >
+          <Flex justifyContent='space-around' flexDirection={['column', 'column', 'row', 'row']} >
 
-            <Box ml='10%' mt='2%' width='35%' borderStyle='solid' height='50%'>
+            <Box ml='10%' mt='2%' width={['65%','45%','45%','35%']} borderStyle='solid' height='50%' >
               <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
@@ -166,7 +166,7 @@ const Home: NextPage = () => {
 
 
             <Box mr='10%' mt='2%' width='35%' borderStyle='solid' maxH='100%' >
-              <Text fontSize={{ base: '16px', md: '20px', lg: '40px' }}>
+              <Text fontSize={{ base: '20px', md: '30px', lg: '40px' }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -174,7 +174,7 @@ const Home: NextPage = () => {
             </Box>
           </Flex>
           <Center>
-            <ArrowDownIcon w={10} h={10} mt='10' onClick={handleClickOne} cursor='pointer' />
+            <ArrowDownIcon w={10} h={10} mt='10' onClick={handleClickOne} cursor='pointer'  />
           </Center>
         </section>
 
