@@ -181,24 +181,24 @@ const Home: NextPage = () => {
               <br />
   
               <Flex justifyContent='space-evenly' maxW='60%' margin='auto' >
-                <a href="https://chakra-ui.com/docs/components/icon/usage" target="_blank" rel="noopener noreferrer">
-                  <Icon aria-label='discord' w={10} h={10}
+                <a href="https://discord.gg/n6myHWDcUv" target="_blank" rel="noopener noreferrer">
+                  <Icon aria-label='discord logo/link' w={10} h={10}
                     as={FaDiscord}
                   />
                 </a>
 
-                <a href="https://chakra-ui.com/docs/components/icon/usage" target="_blank" rel="noopener noreferrer">
-                  <Icon aria-label='discord' w={10} h={10}
+                <a href="https://www.instagram.com/warwickbandsoc/" target="_blank" rel="noopener noreferrer">
+                  <Icon aria-label='instagram logo/link' w={10} h={10}
                     as={FaInstagram}
                   />
                 </a>
-                <a href="https://chakra-ui.com/docs/components/icon/usage" target="_blank" rel="noopener noreferrer">
-                  <Icon aria-label='discord' w={10} h={10}
+                <a href="https://www.facebook.com/warwickbandsoc" target="_blank" rel="noopener noreferrer">
+                  <Icon aria-label='facebook logo/link' w={10} h={10}
                     as={FaFacebook}
                   />
                 </a>
-                <a href="https://chakra-ui.com/docs/components/icon/usage" target="_blank" rel="noopener noreferrer">
-                  <Icon aria-label='discord' w={10} h={10}
+                <a href="https://twitter.com/warwickbandsoc?lang=en-GB" target="_blank" rel="noopener noreferrer">
+                  <Icon aria-label='twitter logo/link' w={10} h={10}
                     as={FaTwitter}
                   />
                 </a>

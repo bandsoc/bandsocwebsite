@@ -5,8 +5,9 @@ import { Dict } from "@chakra-ui/utils";
 
 
 const config: ThemeConfig = {
-    useSystemColorMode: false,
     initialColorMode: 'light',
+    useSystemColorMode: false,
+    
     
     // colors: {
     //     white: 'rgba(255, 255, 255, 0.92)',
