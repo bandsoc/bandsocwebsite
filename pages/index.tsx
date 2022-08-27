@@ -6,7 +6,8 @@ import { ArrowDownIcon, ArrowUpIcon, HamburgerIcon } from '@chakra-ui/icons'
 import Layout from '../components/Layout'
 import React, { useRef } from 'react'
 import { InstagramEmbed } from 'react-social-media-embed';
-import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
+import { Tabs, TabList, TabPanels, Tab, TabPanel, Link, IconButton, Icon } from '@chakra-ui/react'
+import { FaDiscord, FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -135,11 +136,11 @@ const Home: NextPage = () => {
       <Box className='container'>
         <section className="one" ref={refThree}>
           <Layout />
-          <Flex justifyContent='space-around' flexDirection={['column', 'column', 'row', 'row']} >
+          <Flex justifyContent='space-around' flexDirection={['column', 'column', 'row', 'row']} minH='76vh' >
 
-            <Box ml='10%' mt='2%' width={['65%','45%','45%','35%']} display={['none', 'none', 'flex', 'flex']} borderStyle='solid' height='50%' >
+            <Box ml='10%' mt='2%' width={['0', '0', '45%', '35%']} display={['none', 'none', 'flex', 'flex']} borderStyle='solid' height='50%' >
               <Swiper
-                
+
                 spaceBetween={30}
                 centeredSlides={true}
                 autoplay={{
@@ -166,16 +167,47 @@ const Home: NextPage = () => {
             </Box>
 
 
-            <Box mr='10%' mt='2%' width='35%' borderStyle='solid' maxH='100%' >
-              <Text fontSize={{ base: '20px', md: '30px', lg: '40px' }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            <Box mr={['0%', '0%', '10%', '10%']} mt='2%' width={['100%', '100%', '45%', '35%']} textAlign={['center', 'center', 'left', 'left']} alignItems={['center', 'center', 'none', 'none']} borderStyle='solid' maxH='100%' >
+              <Text fontSize={{ base: '40px', md: '40px', lg: '40px' }} >
+                Welcome to BandSoc
               </Text>
+              <Text fontSize={{ base: '20px', md: '20px', lg: '25px' }} >
+                BandSoc is a society for music lovers and bands - whatever your preferred genre we have the widest variety of bands and people as one of the university&apos;s largest and most active societies. <br /> Whether you&apos;re already making music or looking to get started, there will always be someone to jam with.
+              </Text>
+              <br />
+              <Text fontSize={{ base: '25x', md: '25px', lg: '25px' }}  minH="5vh">
+                Buy a membership <Link color='teal.500' href='https://www.warwicksu.com/societies-sports/societies/band/#org-join' isExternal >here</Link>
+              </Text>
+              <br />
+  
+              <Flex justifyContent='space-evenly' maxW='60%' >
+                <a href="https://chakra-ui.com/docs/components/icon/usage" target="_blank" rel="noopener noreferrer">
+                  <Icon aria-label='discord' w={10} h={10}
+                    as={FaDiscord}
+                  />
+                </a>
+
+                <a href="https://chakra-ui.com/docs/components/icon/usage" target="_blank" rel="noopener noreferrer">
+                  <Icon aria-label='discord' w={10} h={10}
+                    as={FaInstagram}
+                  />
+                </a>
+                <a href="https://chakra-ui.com/docs/components/icon/usage" target="_blank" rel="noopener noreferrer">
+                  <Icon aria-label='discord' w={10} h={10}
+                    as={FaFacebook}
+                  />
+                </a>
+                <a href="https://chakra-ui.com/docs/components/icon/usage" target="_blank" rel="noopener noreferrer">
+                  <Icon aria-label='discord' w={10} h={10}
+                    as={FaTwitter}
+                  />
+                </a>
+              </Flex>
+
             </Box>
           </Flex>
           <Center>
-            <ArrowDownIcon w={10} h={10} mt='10' onClick={handleClickOne} cursor='pointer' alignItems='flex-end'  />
+            <ArrowDownIcon w={10} h={10} mt='10' onClick={handleClickOne} cursor='pointer' alignItems='flex-end' />
           </Center>
         </section>
 
@@ -186,7 +218,7 @@ const Home: NextPage = () => {
 
           <Swiper
             slidesPerView="auto"
-          
+
             loop={true}
             loopFillGroupWithBlank={true}
             pagination={{
@@ -198,18 +230,18 @@ const Home: NextPage = () => {
             breakpoints={{
               640: {
                 slidesPerView: 1,
-                
-                
+
+
               },
               768: {
                 slidesPerView: 2,
-                
-                
+
+
               },
               1024: {
                 slidesPerView: 3,
-      
-                
+
+
               },
             }}
           >
