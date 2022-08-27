@@ -137,8 +137,9 @@ const Home: NextPage = () => {
           <Layout />
           <Flex justifyContent='space-around' flexDirection={['column', 'column', 'row', 'row']} >
 
-            <Box ml='10%' mt='2%' width={['65%','45%','45%','35%']} borderStyle='solid' height='50%' >
+            <Box ml='10%' mt='2%' width={['65%','45%','45%','35%']} display={['none', 'none', 'flex', 'flex']} borderStyle='solid' height='50%' >
               <Swiper
+                
                 spaceBetween={30}
                 centeredSlides={true}
                 autoplay={{
@@ -174,7 +175,7 @@ const Home: NextPage = () => {
             </Box>
           </Flex>
           <Center>
-            <ArrowDownIcon w={10} h={10} mt='10' onClick={handleClickOne} cursor='pointer'  />
+            <ArrowDownIcon w={10} h={10} mt='10' onClick={handleClickOne} cursor='pointer' alignItems='flex-end'  />
           </Center>
         </section>
 
@@ -184,9 +185,8 @@ const Home: NextPage = () => {
           </Center>
 
           <Swiper
-            slidesPerView={1}
-            spaceBetween={0}
-            slidesPerGroup={1}
+            slidesPerView="auto"
+          
             loop={true}
             loopFillGroupWithBlank={true}
             pagination={{
@@ -198,18 +198,18 @@ const Home: NextPage = () => {
             breakpoints={{
               640: {
                 slidesPerView: 1,
-                slidesPerGroup: 1,
-                spaceBetween: 20,
+                
+                
               },
               768: {
                 slidesPerView: 2,
-                slidesPerGroup: 2,
-                spaceBetween: 40,
+                
+                
               },
               1024: {
                 slidesPerView: 3,
-                slidesPerGroup: 3,
-                spaceBetween: 50,
+      
+                
               },
             }}
           >
