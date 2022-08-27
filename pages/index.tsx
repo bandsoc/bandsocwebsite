@@ -175,11 +175,11 @@ const Home: NextPage = () => {
                 BandSoc is a society for music lovers and bands - whatever your preferred genre we have the widest variety of bands and people as one of the university&apos;s largest and most active societies. <br /> Whether you&apos;re already making music or looking to get started, there will always be someone to jam with.
               </Text>
               <br />
-              <Text fontSize={{ base: '20px', md: '20px', lg: '25px' }}  minH="5vh">
+              <Text fontSize={{ base: '20px', md: '20px', lg: '25px' }} minH="5vh">
                 Buy a membership <Link color='teal.500' href='https://www.warwicksu.com/societies-sports/societies/band/#org-join' isExternal >here</Link>
               </Text>
               <br />
-  
+
               <Flex justifyContent='space-evenly' maxW='60%' margin='auto' >
                 <a href="https://discord.gg/n6myHWDcUv" target="_blank" rel="noopener noreferrer">
                   <Icon aria-label='discord logo/link' w={10} h={10}
@@ -218,7 +218,6 @@ const Home: NextPage = () => {
 
           <Swiper
             slidesPerView="auto"
-
             loop={true}
             loopFillGroupWithBlank={true}
             pagination={{
@@ -230,18 +229,12 @@ const Home: NextPage = () => {
             breakpoints={{
               640: {
                 slidesPerView: 1,
-
-
               },
               768: {
                 slidesPerView: 2,
-
-
               },
               1024: {
                 slidesPerView: 3,
-
-
               },
             }}
           >
