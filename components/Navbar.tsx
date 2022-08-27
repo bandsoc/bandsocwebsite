@@ -4,7 +4,6 @@ import { HStack, Box, Spacer, Flex, Text, Link, Image, Button, useColorMode, Ico
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
 
 const Navbar = () => {
-    const { colorMode, toggleColorMode } = useColorMode()
     const [display, changeDisplay] = useState('none');
 
     return (
