@@ -45,7 +45,7 @@ a {
 
 .container {
   scroll-snap-type: y proximity;
-  overflow: scroll;
+  overflow: auto;
   height: 100vh;
 }
 
