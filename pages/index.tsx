@@ -167,7 +167,7 @@ const Home: NextPage = () => {
             </Box>
 
 
-            <Box mr={['0%', '10%', '10%', '10%']} mt='2%' width={['100%', '100%', '45%', '35%']} textAlign={['center', 'center', 'left', 'left']} alignItems={['center', 'center', 'none', 'none']} borderStyle='solid' maxH='100%' p={[10, 5, 0, ]} >
+            <Box mr={['0%', '10%', '10%', '10%']} mt={['0','0','2%', '2%']} width={['100%', '100%', '45%', '35%']} textAlign={['center', 'center', 'left', 'left']} alignItems={['center', 'center', 'none', 'none']} borderStyle='solid' maxH='100%' p={[10, 5, 0, ]} >
               <Text fontSize={{ base: '40px', md: '40px', lg: '40px' }}>
                 Welcome to BandSoc
               </Text>
