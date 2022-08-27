@@ -167,20 +167,20 @@ const Home: NextPage = () => {
             </Box>
 
 
-            <Box mr={['0%', '0%', '10%', '10%']} mt='2%' width={['100%', '100%', '45%', '35%']} textAlign={['center', 'center', 'left', 'left']} alignItems={['center', 'center', 'none', 'none']} borderStyle='solid' maxH='100%' >
-              <Text fontSize={{ base: '40px', md: '40px', lg: '40px' }} >
+            <Box mr={['0%', '10%', '10%', '10%']} mt='2%' width={['100%', '100%', '45%', '35%']} textAlign={['center', 'center', 'left', 'left']} alignItems={['center', 'center', 'none', 'none']} borderStyle='solid' maxH='100%' >
+              <Text fontSize={{ base: '40px', md: '40px', lg: '40px' }}>
                 Welcome to BandSoc
               </Text>
               <Text fontSize={{ base: '20px', md: '20px', lg: '25px' }} >
                 BandSoc is a society for music lovers and bands - whatever your preferred genre we have the widest variety of bands and people as one of the university&apos;s largest and most active societies. <br /> Whether you&apos;re already making music or looking to get started, there will always be someone to jam with.
               </Text>
               <br />
-              <Text fontSize={{ base: '25x', md: '25px', lg: '25px' }}  minH="5vh">
+              <Text fontSize={{ base: '20px', md: '20px', lg: '25px' }}  minH="5vh">
                 Buy a membership <Link color='teal.500' href='https://www.warwicksu.com/societies-sports/societies/band/#org-join' isExternal >here</Link>
               </Text>
               <br />
   
-              <Flex justifyContent='space-evenly' maxW='60%' >
+              <Flex justifyContent='space-evenly' maxW='60%' margin='auto' >
                 <a href="https://chakra-ui.com/docs/components/icon/usage" target="_blank" rel="noopener noreferrer">
                   <Icon aria-label='discord' w={10} h={10}
                     as={FaDiscord}
