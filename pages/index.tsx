@@ -178,9 +178,9 @@ const Home: NextPage = () => {
               <Text fontSize={{ base: '20px', md: '20px', lg: '25px' }} minH="5vh">
                 Buy a membership <Link color='teal.500' href='https://www.warwicksu.com/societies-sports/societies/band/#org-join' isExternal >here</Link>
               </Text>
-              <br />
+             
 
-              <Flex justifyContent='space-evenly' maxW='60%' margin='auto' >
+              <Flex justifyContent='space-evenly' maxW={['85%','80%','60%','60%']} margin='auto' mt={[ '0','2','5', '5']}  >
                 <a href="https://discord.gg/n6myHWDcUv" target="_blank" rel="noopener noreferrer">
                   <Icon aria-label='discord logo/link' w={10} h={10}
                     as={FaDiscord}
