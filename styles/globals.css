@@ -43,14 +43,14 @@ a {
   align-items: center;
 }
 
-.container {
-  scroll-snap-type: y proximity;
-  overflow: auto;
-  height: 100vh;
-}
 
 section {
   height: 100vh;
   scroll-snap-align: start;
 }
 
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+}
