@@ -1,5 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
+You can check the deployed website <a href="https://bandsocwebsite.vercel.app/" target="_blank">here</a>
+# Development Info
 ## Getting Started
 
 First, run the development server:
