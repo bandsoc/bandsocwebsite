@@ -4,8 +4,14 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+  
 
+}
+/* use this to center the content on bigger screens ISSUE: SCROLLBAR
+MOVES AS WELL!!!*/
+  /* max-width: 1500px;
+  width: 100vw;
+  margin: auto; */
 a {
   color: inherit;
   text-decoration: none;
@@ -43,14 +49,14 @@ a {
   align-items: center;
 }
 
-.container {
-  scroll-snap-type: y proximity;
-  overflow: auto;
-  height: 100vh;
-}
 
 section {
   height: 100vh;
   scroll-snap-align: start;
 }
 
+.container {
+  scroll-snap-type: y proximity;
+  overflow-y: auto;
+  height: 100vh;
+}
