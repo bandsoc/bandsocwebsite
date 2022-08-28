@@ -6,8 +6,8 @@ import { ArrowDownIcon, ArrowUpIcon, HamburgerIcon } from '@chakra-ui/icons'
 import Layout from '../components/Layout'
 import React, { useRef } from 'react'
 import { InstagramEmbed } from 'react-social-media-embed';
-import { Tabs, TabList, TabPanels, Tab, TabPanel, Link, IconButton, Icon } from '@chakra-ui/react'
-import { FaDiscord, FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa'
+import { Tabs, TabList, TabPanels, Tab, TabPanel, Link, IconButton, Icon, Divider } from '@chakra-ui/react'
+import { FaDiscord, FaInstagram, FaFacebook, FaTwitter, FaCopyright } from 'react-icons/fa'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -167,7 +167,7 @@ const Home: NextPage = () => {
             </Box>
 
 
-            <Box mr={['0%', '10%', '10%', '10%']} mt='2%' width={['100%', '100%', '45%', '35%']} textAlign={['center', 'center', 'left', 'left']} alignItems={['center', 'center', 'none', 'none']} borderStyle='solid' maxH='100%' p={[10, 5, 0, ]} >
+            <Box mr={['0%', '10%', '10%', '10%']} mt={['0', '0', '2%', '2%']} width={['100%', '100%', '45%', '35%']} textAlign={['center', 'center', 'left', 'left']} alignItems={['center', 'center', 'none', 'none']} borderStyle='solid' maxH='100%' p={[10, 5, 0,]} >
               <Text fontSize={{ base: '40px', md: '40px', lg: '40px' }}>
                 Welcome to BandSoc
               </Text>
@@ -319,7 +319,16 @@ const Home: NextPage = () => {
           <Center>
             <ArrowUpIcon w={10} h={10} onClick={handleClickThree} cursor='pointer' />
           </Center>
+          <Flex alignItems='center' justifyContent='center'>
+          <Text color='grey' fontSize='xs'>Copyright</Text>
+            <Icon aria-label='copyright logo' w={5} h={5}
+              as={FaCopyright} color='grey' p='1'
+            />
+            <Text color='grey' fontSize='xs'>https://boraakyuz.me/</Text>
+          </Flex>
+
         </section>
+
 
       </Box>
 
