@@ -194,7 +194,7 @@ const Home: NextPage = () => {
                     as={FaFacebook}
                   />
                 </a>
-                <a href="https://twitter.com/warwickbandsoc?lang=en-GB" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/channel/UCqGvmDGNnNI2_6f_rTwaDlw" target="_blank" rel="noopener noreferrer">
                   <Icon aria-label='twitter logo/link' w={10} h={10}
                     as={FaTwitter}
                   />
