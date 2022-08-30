@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Flex, Spacer, useColorMode } from '@chakra-ui/react'
+import { Button, Flex, Spacer, useColorMode, Divider } from '@chakra-ui/react'
 import Navbar from './Navbar'
 
 const Layout = ({ children }: any) => {
@@ -8,6 +8,7 @@ const Layout = ({ children }: any) => {
         <>
             <Flex direction='column'  >
                 <Navbar />
+                <Divider orientation='horizontal' />
                 {children}
             </Flex>
             

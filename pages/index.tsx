@@ -7,7 +7,7 @@ import Layout from '../components/Layout'
 import React, { useRef } from 'react'
 import { InstagramEmbed } from 'react-social-media-embed';
 import { Tabs, TabList, TabPanels, Tab, TabPanel, Link, IconButton, Icon, Divider } from '@chakra-ui/react'
-import { FaDiscord, FaInstagram, FaFacebook, FaTwitter, FaCopyright } from 'react-icons/fa'
+import { FaDiscord, FaInstagram, FaFacebook, FaTwitter, FaCopyright, FaYoutube } from 'react-icons/fa'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -196,7 +196,7 @@ const Home: NextPage = () => {
                 </a>
                 <a href="https://www.youtube.com/channel/UCqGvmDGNnNI2_6f_rTwaDlw" target="_blank" rel="noopener noreferrer">
                   <Icon aria-label='twitter logo/link' w={10} h={10}
-                    as={FaTwitter}
+                    as={FaYoutube}
                   />
                 </a>
               </Flex>
@@ -211,7 +211,7 @@ const Home: NextPage = () => {
         <Divider orientation='horizontal' />
         <section className="two" ref={refOne}>
           <Center>
-            <Text fontSize='4xl' mt='5'>Meet the <b>Exec</b></Text>
+            <Text fontSize='4xl' mt='5'>Meet the Exec</Text>
           </Center>
 
           <Swiper
