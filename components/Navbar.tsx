@@ -21,82 +21,71 @@ const Navbar = () => {
                     </Link>
                 </NextLink>
 
-                <NextLink href='/practiceroom' passHref>
-                    <Link fontSize='2xl'>
-                        Practice Room
-                    </Link>
-                </NextLink>
+                <Text fontSize='2xl' color='#d3d3d3' >
+                    Practice Room
+                </Text>
 
-                <NextLink href='/botb' passHref>
-                    <Link fontSize='2xl'>
-                        BotB
-                    </Link>
-                </NextLink>
+                <Text fontSize='2xl' color='#d3d3d3' >
+                    Battle of the Bands
+                </Text>
 
                 <Spacer />
 
-                <NextLink href='/login' passHref>
-                    <Link fontSize='2xl'>
-                        Log in
-                    </Link>
-                </NextLink>
+                <Text fontSize='2xl' color='#d3d3d3' >
+                    Log in
+                </Text>
 
-                <NextLink href='/signup' passHref>
-                    <Link fontSize='2xl' mr='3rem'>
-                        Sign Up
-                    </Link>
-                </NextLink>
+                <Text fontSize='2xl' mr='3rem' color='#d3d3d3'>
+                    Sign Up
+                </Text>
+
             </Flex>
             <IconButton aria-label='open menu' size='lg' mr={3} mt={3}
-                icon={<HamburgerIcon />} display={['flex', 'flex', 'none', 'none']} 
+                icon={<HamburgerIcon />} display={['flex', 'flex', 'none', 'none']}
                 onClick={() => changeDisplay('flex')} />
 
             <Flex w='100vw'
-            bgColor="gray.50"
-            zIndex={20}
-            h='100vh'
-            pos='fixed'
-            top='0'
-            left='0'
-            overflow='auto'
-            flexDirection='column'
-            display={display}
+                bgColor="gray.50"
+                zIndex={20}
+                h='100vh'
+                pos='fixed'
+                top='0'
+                left='0'
+                overflow='auto'
+                flexDirection='column'
+                display={display}
             >
                 <Flex justifyContent='flex-end'>
-                    <IconButton mt={3} mr={3} aria-label='close menu' size='lg' 
-                    icon={<CloseIcon />} 
-                    onClick={() => changeDisplay('none')}/>
+                    <IconButton mt={3} mr={3} aria-label='close menu' size='lg'
+                        icon={<CloseIcon />}
+                        onClick={() => changeDisplay('none')} />
                 </Flex>
                 <Flex direction='column' align='center'>
+
                     <NextLink href='/' passHref>
                         <Link fontSize='2xl' >
                             Home
                         </Link>
                     </NextLink>
 
-                    <NextLink href='/practiceroom' passHref>
-                        <Link fontSize='2xl'>
-                            Practice Room
-                        </Link>
-                    </NextLink>
+                    <Text fontSize='2xl' color='#d3d3d3' >
+                        Practice Room
+                    </Text>
 
-                    <NextLink href='/botb' passHref>
-                        <Link fontSize='2xl'>
-                            BotB
-                        </Link>
-                    </NextLink>
+                    <Text fontSize='2xl' color='#d3d3d3' >
+                        Battle of the Bands
+                    </Text>
 
-                    <NextLink href='/login' passHref>
-                        <Link fontSize='2xl'>
-                            Log in
-                        </Link>
-                    </NextLink>
+                    <Spacer />
 
-                    <NextLink href='/signup' passHref>
-                        <Link fontSize='2xl'>
-                            Sign Up
-                        </Link>
-                    </NextLink>
+                    <Text fontSize='2xl' color='#d3d3d3' >
+                        Log in
+                    </Text>
+
+                    <Text fontSize='2xl' color='#d3d3d3' >
+                        Sign Up
+                    </Text>
+
                 </Flex>
             </Flex>
         </Flex>
