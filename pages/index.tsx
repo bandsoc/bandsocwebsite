@@ -321,7 +321,7 @@ const Home: NextPage = () => {
             <Icon aria-label='copyright logo' w={5} h={5}
               as={FaCopyright} color='grey' p='1'
             />
-            <Text color='grey' fontSize='xs'>https://boraakyuz.me/</Text>
+            <Text color='grey' fontSize='xs'>https://github.com/bandsoc/bandsocwebsite</Text>
           </Flex>
 
         </section>
