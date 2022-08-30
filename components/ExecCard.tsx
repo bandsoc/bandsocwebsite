@@ -22,7 +22,7 @@ const ExecCard = ({ image, imageAlt, name, role, description }: IProps) => {
             <Box >
                 <Center>
                     <Box display='flex' alignItems='baseline' maxW='100%'>
-                        <Text fontSize='4xl' noOfLines={1}> {name}</Text>
+                        <Text fontSize='3xl' noOfLines={1}> {name}</Text>
                     </Box>
                 </Center>
                 <Center>

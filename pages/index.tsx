@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import ExecCard from '../components/ExecCard'
-import { Flex, Box, Text, Image, Center } from '@chakra-ui/react'
+import { Flex, Box, Text, Image, Center, Stack } from '@chakra-ui/react'
 import { ArrowDownIcon, ArrowUpIcon, HamburgerIcon } from '@chakra-ui/icons'
 import Layout from '../components/Layout'
 import React, { useRef } from 'react'
@@ -135,12 +135,11 @@ const Home: NextPage = () => {
       
       <Box className='container'>
         <section className="one" ref={refThree}>
-        <Layout />
-          <Flex justifyContent='space-around' flexDirection={['column', 'column', 'row', 'row']} minH='76vh' margin='auto' >
+        <Layout />  
+          <Flex justifyContent='space-around' flexDirection={['column', 'column', 'row', 'row']} minH='76vh' maxH='82vh' margin='auto' >
 
-            <Box ml='10%' mt='2%' width={['0', '0', '45%', '35%']} display={['none', 'none', 'flex', 'flex']} borderStyle='solid' height='50%' >
+            <Box ml='10%' mt='2%' width={['0', '0', '45%', '35%']} display={['none', 'none', 'flex', 'flex']} borderStyle='solid' p='0' marginBottom='0' height='92vh' >
               <Swiper
-
                 spaceBetween={30}
                 centeredSlides={true}
                 autoplay={{
@@ -154,18 +153,17 @@ const Home: NextPage = () => {
                 modules={[Autoplay, Pagination, Navigation]}
               >
                 <SwiperSlide>
-                  <Image src='https://i.scdn.co/image/a4e10b79a642e9891383448cbf37d7266a6883d6' alt='Dan Abramov' />
+                  <Image src='/images/tide.png' alt='Dan Abramov' />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <Image src='https://i.scdn.co/image/a4e10b79a642e9891383448cbf37d7266a6883d6' alt='Dan Abramov' />
+                  <Image src='/images/sunnysidedown.png' alt='Dan Abramov' />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <Image src='https://i.scdn.co/image/a4e10b79a642e9891383448cbf37d7266a6883d6' alt='Dan Abramov' />
+                  <Image src='/images/owain.jpg' alt='Dan Abramov' />
                 </SwiperSlide>
 
               </Swiper>
             </Box>
-
 
             <Box mr={['0%', '10%', '10%', '10%']} mt={['0', '0', '2%', '2%']} width={['100%', '100%', '45%', '35%']} textAlign={['center', 'center', 'left', 'left']} alignItems={['center', 'center', 'none', 'none']} borderStyle='solid' maxH='100%' p={[10, 5, 0,]} >
               <Text fontSize={{ base: '40px', md: '40px', lg: '40px' }}>
@@ -176,9 +174,8 @@ const Home: NextPage = () => {
               </Text>
               <br />
               <Text fontSize={{ base: '20px', md: '20px', lg: '25px' }} minH="5vh">
-                Buy a membership <Link color='teal.500' href='https://www.warwicksu.com/societies-sports/societies/band/#org-join' isExternal >here</Link>
+                Buy a membership <Link color='teal.500' href='https://www.warwicksu.com/societies-sports/societies/band/' isExternal >here</Link>
               </Text>
-             
 
               <Flex justifyContent='space-evenly' maxW={['85%','80%','60%','60%']} margin='auto' mt={[ '0','2','6', '6']}  >
                 <a href="https://discord.gg/n6myHWDcUv" target="_blank" rel="noopener noreferrer">
@@ -203,17 +200,20 @@ const Home: NextPage = () => {
                   />
                 </a>
               </Flex>
-
             </Box>
           </Flex>
           <Center>
-            <ArrowDownIcon w={10} h={10} mt='10' onClick={handleClickOne} cursor='pointer' alignItems='flex-end' display={['none', 'none', 'flex', 'flex']} />
+            <ArrowDownIcon w={10} h={10}  onClick={handleClickOne} cursor='pointer'   />
           </Center>
+
+          
+
         </section>
 
+        <Divider orientation='horizontal' />
         <section className="two" ref={refOne}>
           <Center>
-            <Text fontSize='4xl' mt='5'>Meet the <b>execs</b></Text>
+            <Text fontSize='4xl' mt='5'>Meet the <b>Exec</b></Text>
           </Center>
 
           <Swiper
@@ -238,7 +238,6 @@ const Home: NextPage = () => {
               },
             }}
           >
-
             <SwiperSlide>
               <Box mt='5' mb='5' width='20em' p='5' >
                 <ExecCard image={taylor.image} imageAlt={taylor.imageAlt} name={taylor.name} role={taylor.role} description={taylor.description} />
@@ -257,7 +256,7 @@ const Home: NextPage = () => {
             <SwiperSlide>
               <Box mt='5' mb='5' width='20em' p='5'  >
                 {/* CHECK NUMBER OF CHARACTERS IN INPUT STRINGS TO EXEC CARD AND MAKE FONT SMALLER TO MAKE IT FIT IF NECESSARY */}
-                <ExecCard image={noah.image} imageAlt={noah.imageAlt} name='Noah Bezuix' role={noah.role} description={noah.description} />
+                <ExecCard image={noah.image} imageAlt={noah.imageAlt} name={noah.name} role={noah.role} description={noah.description} />
               </Box>
             </SwiperSlide>
             <SwiperSlide>
@@ -292,7 +291,7 @@ const Home: NextPage = () => {
           </Center>
 
         </section>
-
+        <Divider orientation='horizontal' />
         <section className="three" ref={refTwo}>
           <Center>
             <Text fontSize='4xl' mt='5'>Events</Text>
