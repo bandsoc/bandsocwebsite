@@ -290,7 +290,7 @@ const Home: NextPage = () => {
           </Center>
 
         </section>
-
+        <Divider orientation='horizontal' />
         <section className="three" ref={refTwo}>
           <Center>
             <Text fontSize='4xl' mt='5'>Events</Text>
