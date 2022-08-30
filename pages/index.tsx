@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import ExecCard from '../components/ExecCard'
-import { Flex, Box, Text, Image, Center } from '@chakra-ui/react'
+import { Flex, Box, Text, Image, Center, Stack } from '@chakra-ui/react'
 import { ArrowDownIcon, ArrowUpIcon, HamburgerIcon } from '@chakra-ui/icons'
 import Layout from '../components/Layout'
 import React, { useRef } from 'react'
@@ -135,10 +135,10 @@ const Home: NextPage = () => {
       
       <Box className='container'>
         <section className="one" ref={refThree}>
-        <Layout />
-          <Flex justifyContent='space-around' flexDirection={['column', 'column', 'row', 'row']} minH='76vh' maxH='100vh' margin='auto' >
+        <Layout />  
+          <Flex justifyContent='space-around' flexDirection={['column', 'column', 'row', 'row']} minH='76vh' maxH='82vh' margin='auto' >
 
-            <Box ml='10%' mt='2%' width={['0', '0', '45%', '35%']} display={['none', 'none', 'flex', 'flex']} borderStyle='solid' p='0' marginBottom='0' >
+            <Box ml='10%' mt='2%' width={['0', '0', '45%', '35%']} display={['none', 'none', 'flex', 'flex']} borderStyle='solid' p='0' marginBottom='0' height='92vh' >
               <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
@@ -202,12 +202,14 @@ const Home: NextPage = () => {
               </Flex>
             </Box>
           </Flex>
-
           <Center>
-            <ArrowDownIcon w={50} h={50} mt='10' onClick={handleClickOne} cursor='pointer' alignItems='flex-end' display={['none', 'none', 'flex', 'flex']} />
+            <ArrowDownIcon w={10} h={10}  onClick={handleClickOne} cursor='pointer'  display={['none', 'none', 'flex', 'flex']} />
           </Center>
+
           
+
         </section>
+
         <Divider orientation='horizontal' />
         <section className="two" ref={refOne}>
           <Center>
@@ -236,7 +238,6 @@ const Home: NextPage = () => {
               },
             }}
           >
-
             <SwiperSlide>
               <Box mt='5' mb='5' width='20em' p='5' >
                 <ExecCard image={taylor.image} imageAlt={taylor.imageAlt} name={taylor.name} role={taylor.role} description={taylor.description} />
