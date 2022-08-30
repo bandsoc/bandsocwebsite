@@ -203,7 +203,7 @@ const Home: NextPage = () => {
             </Box>
           </Flex>
           <Center>
-            <ArrowDownIcon w={10} h={10}  onClick={handleClickOne} cursor='pointer'  display={['none', 'none', 'flex', 'flex']} />
+            <ArrowDownIcon w={10} h={10}  onClick={handleClickOne} cursor='pointer'   />
           </Center>
 
           
