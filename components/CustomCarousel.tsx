@@ -1,7 +1,6 @@
 import { Box } from '@chakra-ui/react';
 import React from 'react'
 
-
 interface IProps {
     imageOneSrc: string,
     imageTwoSrc: string,

@@ -165,7 +165,7 @@ const Home: NextPage = () => {
               </Swiper>
             </Box>
 
-            <Box mr={['0%', '10%', '10%', '10%']} mt={['0', '0', '2%', '2%']} width={['100%', '100%', '45%', '35%']} textAlign={['center', 'center', 'left', 'left']} alignItems={['center', 'center', 'none', 'none']} borderStyle='solid' maxH='100%' p={[10, 5, 0,]} >
+            <Box mr={['0%', '10%', '10%', '10%']} mt={['0', '0', '2%', '2%']} width={['100%', '100%', '45%', '35%']} textAlign={['center', 'center', 'left', 'left']} alignItems={['center', 'center', 'none', 'none']} borderStyle='solid' maxH='100%' p={[10, 5, 0,]}  >
               <Text fontSize={{ base: '40px', md: '40px', lg: '40px' }}>
                 Welcome to BandSoc
               </Text>
@@ -179,23 +179,23 @@ const Home: NextPage = () => {
 
               <Flex justifyContent='space-evenly' maxW={['85%','80%','60%','60%']} margin='auto' mt={[ '0','2','6', '6']}  >
                 <a href="https://discord.gg/n6myHWDcUv" target="_blank" rel="noopener noreferrer">
-                  <Icon aria-label='discord logo/link' w={10} h={10}
+                  <Icon aria-label='discord logo/link' w={[10, 10, 8, 10]} h={[10, 10, 8, 10]}
                     as={FaDiscord}
                   />
                 </a>
 
                 <a href="https://www.instagram.com/warwickbandsoc/" target="_blank" rel="noopener noreferrer">
-                  <Icon aria-label='instagram logo/link' w={10} h={10}
+                  <Icon aria-label='instagram logo/link' w={[10, 10, 8, 10]} h={[10, 10, 8, 10]}
                     as={FaInstagram}
                   />
                 </a>
                 <a href="https://www.facebook.com/warwickbandsoc" target="_blank" rel="noopener noreferrer">
-                  <Icon aria-label='facebook logo/link' w={10} h={10}
+                  <Icon aria-label='facebook logo/link' w={[10, 10, 8, 10]} h={[10, 10, 8, 10]}
                     as={FaFacebook}
                   />
                 </a>
                 <a href="https://www.youtube.com/channel/UCqGvmDGNnNI2_6f_rTwaDlw" target="_blank" rel="noopener noreferrer">
-                  <Icon aria-label='twitter logo/link' w={10} h={10}
+                  <Icon aria-label='twitter logo/link' w={[10, 10, 8, 10]} h={[10, 10, 8, 10]}
                     as={FaYoutube}
                   />
                 </a>
@@ -303,7 +303,7 @@ const Home: NextPage = () => {
             <TabPanels>
               <TabPanel>
                 <Box style={{ display: 'flex', justifyContent: 'center' }} >
-                  <InstagramEmbed url="https://www.instagram.com/p/ChZnU1-KmQB/" width={500} height={550} />
+                  <InstagramEmbed url="https://www.instagram.com/p/CimTFcMAgn3/" width={500} height={550} />
                 </Box>
               </TabPanel>
               <TabPanel>
