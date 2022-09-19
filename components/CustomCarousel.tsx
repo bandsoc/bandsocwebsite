@@ -16,3 +16,5 @@ const CustomCarousel = ({ imageOneSrc, imageTwoSrc, imageThreeSrc }: IProps) => 
 }
 
 export default CustomCarousel
+
+//not
