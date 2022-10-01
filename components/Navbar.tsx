@@ -21,9 +21,13 @@ const Navbar = () => {
                     </Link>
                 </NextLink>
 
-                <Text fontSize='2xl' color='#d3d3d3' >
-                    Practice Room
-                </Text>
+                
+                <NextLink href="practiceroom">
+                    <Link fontSize='2xl'>
+                        Practice Room
+                    </Link>
+                </NextLink>
+                
 
                 <Text fontSize='2xl' color='#d3d3d3' >
                     Battle of the Bands
