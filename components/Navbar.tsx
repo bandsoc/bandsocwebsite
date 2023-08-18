@@ -21,9 +21,11 @@ const Navbar = () => {
                     </Link>
                 </NextLink>
 
-                <Text fontSize='2xl' color='#d3d3d3' >
+                <NextLink href='https://booking.warwickbandsoc.co.uk/' passHref>
+                    <Link fontSize='2xl' ml={4}>
                     Practice Room
-                </Text>
+                    </Link>
+                </NextLink>
 
                 <Text fontSize='2xl' color='#d3d3d3' >
                     Battle of the Bands

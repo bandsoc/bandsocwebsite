@@ -323,7 +323,6 @@ const Home: NextPage = () => {
             />
             <Text color='grey' fontSize='xs'>https://github.com/bandsoc/bandsocwebsite</Text>
           </Flex>
-
         </section>
 
 
