@@ -23,7 +23,7 @@ const Navbar = () => {
 
                 <NextLink href='https://booking.warwickbandsoc.co.uk/' passHref>
                     <Link fontSize='2xl' ml={4}>
-                    Practice Room
+                        Practice Room
                     </Link>
                 </NextLink>
 
@@ -65,15 +65,16 @@ const Navbar = () => {
                 <Flex direction='column' align='center'>
 
                     <NextLink href='/' passHref>
-                        <Link fontSize='2xl' >
+                        <Link fontSize='2xl' ml={4}>
                             Home
                         </Link>
                     </NextLink>
 
-                    <Text fontSize='2xl' color='#d3d3d3' >
-                        Practice Room
-                    </Text>
-
+                    <NextLink href='https://booking.warwickbandsoc.co.uk/' passHref>
+                        <Link fontSize='2xl' ml={4}>
+                            Practice Room
+                        </Link>
+                    </NextLink>
                     <Text fontSize='2xl' color='#d3d3d3' >
                         Battle of the Bands
                     </Text>
