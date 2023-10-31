@@ -36,7 +36,7 @@ const theo: ExecCard = {
 }
 
 const rhysDescription: string = "Hi I’m Rhys, a second year media student and your head tech for this year. My job is to maintain equipment and lead all of the load-ins for any gig we have. I play drums in Type One and Average Speed Check."
-const thys: ExecCard = {
+const rhys: ExecCard = {
   image: '/images/Rhys good.jpg',
   imageAlt: 'rhys selfie',
   name: 'Rhys',
