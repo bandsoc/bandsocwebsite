@@ -46,7 +46,7 @@ const rhys: ExecCard = {
 
 const emreDescription: string = "Hey all, I’m a third year discrete maths student and your vice president, and I will be assisting the President in running the society and organising events for you to enjoy!"
 const emre: ExecCard = {
-  image: '/images/dr emre good 1.png',
+  image: '/images/dr emre good 1.jpg',
   imageAlt: 'emre selfie',
   name: 'Emre',
   role: 'Vice President',
@@ -64,7 +64,7 @@ const cosmos: ExecCard = {
 
 const kiranDescription: string = "Hey guys :) I am a vaginal year linguistics student and I am your deputy tech; I will be working with the other tech exec to help set up for gigs and events."
 const kiran: ExecCard = {
-  image: '/images/Kiran good.png',
+  image: '/images/Kiran good.jpg',
   imageAlt: 'kiran selfie',
   name: 'Kiran',
   role: 'Deputy Tech',
@@ -82,7 +82,7 @@ const oli: ExecCard = {
 
 const samDescription: string = "Hey, I’m Sam, a third year computer scientist. I'm a big fan of all things indie and alternative and I’ll be your Webmaster for next year - I’ll be sure to get those booking sheets out on time!"
 const sam: ExecCard = {
-  image: '/images/Sam good.png',
+  image: '/images/Sam good.JPG',
   imageAlt: 'Sam selfie',
   name: 'Sam',
   role: 'Webmaster',
@@ -100,7 +100,7 @@ const jay: ExecCard = {
 
 const joeDescription: string = " Hi, I’m Joe! I’m a third year PPL student and am BandSoc’s welfare officer. It’s my job to make sure BandSoc continues to be a welcoming and safe environment for all members so if you have any issues don’t hesitate to get in touch!"
 const joe: ExecCard = {
-  image: '/images/Joe good.png',
+  image: '/images/Joe good.jpg',
   imageAlt: 'Joe selfie',
   name: 'Joe',
   role: 'Welfare',
@@ -109,7 +109,7 @@ const joe: ExecCard = {
 
 const aleezaDescription: string = "Hi x I’m Aleeza, a second-year Management Student. I am your Secretary and Women’s Officer this year. It’s my job to make sure BandSoc is as inclusive as possible, and the exec meetings are organised, along with handling the weekly email x"
 const aleeza: ExecCard = {
-  image: '/images/Aleeza good.png',
+  image: '/images/Aleeza good.jpg',
   imageAlt: 'Aleeza selfie',
   name: 'Aleeza',
   role: 'Secretary and Womens\'',
@@ -118,7 +118,7 @@ const aleeza: ExecCard = {
 
 const maxDescription: string = "Ayup, I’m Max, a second year Engineering student, lead guitarist for Nos Da and your Marketing exec! It’s my job to make sure that you lot are informed of our upcoming gigs and socials."
 const max: ExecCard = {
-  image: '/images/Me good.png',
+  image: '/images/Me good.jpg',
   imageAlt: 'Max selfie',
   name: 'Max',
   role: 'Marketing',
@@ -127,7 +127,7 @@ const max: ExecCard = {
 
 const jacobDescription: string = "Hey, I’m Jacob and I’m a third year economics student, and the guitarist in Type One. I’m the Social Sec for BandSoc - I’ll be putting on our social events across the year!"
 const jacob: ExecCard = {
-  image: '/images/Jacob good.png',
+  image: '/images/Jacob good.jpg',
   imageAlt: 'Jacob selfie',
   name: 'Jacob',
   role: 'Social',
