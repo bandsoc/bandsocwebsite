@@ -345,12 +345,12 @@ const Home: NextPage = () => {
             <TabPanels>
               <TabPanel>
                 <Box style={{ display: 'flex', justifyContent: 'center' }} >
-                  <InstagramEmbed url="https://www.instagram.com/p/Cx2xmiessUX/" width={500} height={550} />
+                  <InstagramEmbed url="https://www.instagram.com/p/CygJLV5so_h/" width={500} height={550} />
                 </Box>
               </TabPanel>
               <TabPanel>
                 <Box style={{ display: 'flex', justifyContent: 'center' }} >
-                  <InstagramEmbed url="https://www.instagram.com/p/CygJLV5so_h/" width={500} height={550} />
+                  <InstagramEmbed url="https://www.instagram.com/p/Cx2xmiessUX/" width={500} height={550} />
                 </Box>
               </TabPanel>
             </TabPanels>
