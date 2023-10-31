@@ -68,7 +68,7 @@ const kiran: ExecCard = {
   imageAlt: 'kiran selfie',
   name: 'Kiran',
   role: 'Deputy Tech',
-  description: theoDescription,
+  description: kiranDescription,
 }
 
 const oliDescription: string = "Hey! I’m Oli (third year Maths) and I’m your BandSoc President. It’s my job to run the society day to day. I’ll be delegating tasks amongst the exec, running the weekly exec meetings, and generally keeping the BandSoc ship sailing. I can’t wait to keep building the awesome live music community we have at Warwick - this year will be mega!!!"
