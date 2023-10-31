@@ -26,85 +26,112 @@ interface ExecCard {
   description: string,
 }
 
-const taylorDescription: string = "hiii I'm a fourth year systems engineer and my job is to run this whole thing smoothly and boss about my amazing exec team and do anything that needs doing ! I play bass in Rattlesnake, drum for The Kellys, and sing in Red Lamp. And also I really love music and live music and this society !! Top 3 Artists: Hippo Campus, King Gizzard and the Wizard Lizard, Peach Pit Favourite Album: iliwysfyasbysuoi by the 1975 Guilty Pleasure: Carly Rae Jepsen except I don't feel guilty at all bcos she's incredible"
-const taylor: ExecCard = {
-  image: '/images/tayloradam.png',
-  imageAlt: 'taylor selfie',
-  name: 'Taylor Adam',
-  role: 'President',
-  description: taylorDescription,
-}
-
-const lukeDescription: string = "I am a 3rd year Physics student and Vice-President of Warwick BandSoc! As Vice-President I act as the President's right hand man helping run and organise the society by planning events, organising collaborations with other societies and making sure that everyone in the society is having a great time! I play bass in two bands, a hard rock metal band called Brazen Bull (Self titled album out on all streaming platforms 😉 ) and the balls to the walls high energy rock band MORTIS! I may also have a few more projects in the works so keep an eye out for those 👀"
-const luke: ExecCard = {
-  image: '/images/luke.png',
-  imageAlt: 'luke selfie',
-  name: 'Luke Green',
-  role: 'Vice President',
-  description: lukeDescription,
-}
-
-const robbieDescription: string = "I'm mainly a singer but can also play guitar and piano. I'm your secretary which means I organise the exec meetings and manage the weekly email. I'm also the welfare officer so please feel free to come to me with any welfare related issues. My main project is Mortis which I hope you guys will hear! but I'm also working on a few other things👀 "
-const robbie: ExecCard = {
-  image: '/images/robbie.png',
-  imageAlt: 'robbie selfie',
-  name: 'Robbie Marlow',
-  role: 'Secretary + Welfare Officer',
-  description: robbieDescription,
-}
-
-const noahDescription: string = "I am in 2nd year studying Economics, Philosophy, and Psychology. As Treasurer, I run the finances and accounts of BandSoc. This involves managing the practice room bookings, and paying for a new drum kit every week one of you lot break something! As well as this, I also help the other exec organise and run cool events for the society. I play bass for sunny side down, a band for the softboy indie heads out there, (@sunnysidedownband on instagram and tiktok). I am also frontman and songwriter for HomeBread, aspiring midwest emo if you’re into that (@homebreadband on instagram)."
-const noah: ExecCard = {
-  image: '/images/noah.png',
-  imageAlt: 'noah selfie',
-  name: 'Noah Bezuidenhoudt',
-  role: 'Treasurer',
-  description: noahDescription,
-}
-
-const ethanDescription: string = "I am a second year systems engineering student and the Head Tech of Warwick BandSoc. It's my job (along with the deputy tech) to make sure the equipment used at events and in the practice room is working as well as it can be. I currently play guitar and sing backing vox in Mortis."
-const ethan: ExecCard = {
-  image: '/images/ethan.png',
-  imageAlt: 'ethan selfie',
-  name: 'Ethan Stubley',
-  role: 'Head Tech',
-  description: ethanDescription,
-}
-
-const oliDescription: string = "I'm a 2nd year maths student and I help out Ethan with all things tech! I'm a drummer and was so bad at breaking things last year that I felt guilty and took on this role 🥺🥺 You'll also see me running the odd circle/social event. My main band is Feed the Mammoth 🦣🦣🦣 but if you ever need a drummer for your project, drop me a message and see if I'm available because I love new projects..."
-const oli: ExecCard = {
-  image: '/images/oli.png',
-  imageAlt: 'Oli selfie',
-  name: 'Oli Brown',
+const theoDescription: string = "Hi, I’m Theo, a second year computer science student and bassist of Type One. It’s my job along with the other techs to set up and maintain all the gear in the practise room and at our gigs."
+const theo: ExecCard = {
+  image: '/images/Theo good.jpg',
+  imageAlt: 'theo selfie',
+  name: 'Theo',
   role: 'Deputy Tech',
-  description: oliDescription,
+  description: theoDescription,
 }
 
-const jasperDescription: string = "I am a 2nd PPE student. As publicity officer my job is to market all BandSoc events. This involves creating posters, running the social media accounts and advertising all the events we run as a society. I also help out with the general running of the society. I play guitar for Sunny Side Down, (@sunnysidedownband on instagram and tiktok)! I also like to sing some of my own stuff like a soft indie boy (jasperlarsen on tiktok)"
-const jasper: ExecCard = {
-  image: '/images/jasper.png',
-  imageAlt: 'Jasper selfie',
-  name: 'Jasper Chance-Larsen',
-  role: 'Publicity',
-  description: jasperDescription,
+const rhysDescription: string = "Hi I’m Rhys, a second year media student and your head tech for this year. My job is to maintain equipment and lead all of the load-ins for any gig we have. I play drums in Type One and Average Speed Check."
+const thys: ExecCard = {
+  image: '/images/Rhys good.jpg',
+  imageAlt: 'rhys selfie',
+  name: 'Rhys',
+  role: 'Head Tech',
+  description: rhysDescription,
 }
 
-const emreDescription: string = "I'm a 2nd year Maths & CS student, and as the webmaster, I'll be your contact for any spreadsheet related problems, and I also help maintain the website of BandSoc. I'm currently the songwriter and the guitarist of the lovely noisy post-punk band Roman Candles. Also, as a big blueshead I'm looking forward to doing some bluesy stuff this year, stay tuned for that 🙂"
+const emreDescription: string = "Hey all, I’m a third year discrete maths student and your vice president, and I will be assisting the President in running the society and organising events for you to enjoy!"
 const emre: ExecCard = {
-  image: '/images/emre.png',
-  imageAlt: 'Emre selfie',
-  name: 'Emre Ulusoy',
-  role: 'Webmaster',
+  image: '/images/dr emre good 1.png',
+  imageAlt: 'emre selfie',
+  name: 'Emre',
+  role: 'Vice President',
   description: emreDescription,
 }
 
-const noahMeddDescription: string = "I'm a 3rd year Philosophy student. I'm the guy that runs around taking pics that you get 1-2 working months later :)) I currently play guitar and sing in The Kellys (indie rock). If you like Queen I will be your favourite exec member."
-const noahMedd: ExecCard = {
-  image: '/images/noahMedd.png',
-  imageAlt: 'Noah selfie',
-  name: 'Noah Medd',
+const cosmosDescription: string = "Hi, I’m Cosmos Zero and I’m a third year physics student. I’m your Photographer for this year. I'll always find the time to help out with any creative projects! "
+const cosmos: ExecCard = {
+  image: '/images/Cosmos good.png',
+  imageAlt: 'cosmos selfie',
+  name: 'Cosmos',
   role: 'Photographer',
-  description: noahMeddDescription,
+  description: cosmosDescription,
+}
+
+const kiranDescription: string = "Hey guys :) I am a vaginal year linguistics student and I am your deputy tech; I will be working with the other tech exec to help set up for gigs and events."
+const kiran: ExecCard = {
+  image: '/images/Kiran good.png',
+  imageAlt: 'kiran selfie',
+  name: 'Kiran',
+  role: 'Deputy Tech',
+  description: theoDescription,
+}
+
+const oliDescription: string = "Hey! I’m Oli (third year Maths) and I’m your BandSoc President. It’s my job to run the society day to day. I’ll be delegating tasks amongst the exec, running the weekly exec meetings, and generally keeping the BandSoc ship sailing. I can’t wait to keep building the awesome live music community we have at Warwick - this year will be mega!!!"
+const oli: ExecCard = {
+  image: '/images/OLI.png',
+  imageAlt: 'Oli selfie',
+  name: 'Oli Brown',
+  role: 'President',
+  description: oliDescription,
+}
+
+const samDescription: string = "Hey, I’m Sam, a third year computer scientist. I'm a big fan of all things indie and alternative and I’ll be your Webmaster for next year - I’ll be sure to get those booking sheets out on time!"
+const sam: ExecCard = {
+  image: '/images/Sam good.png',
+  imageAlt: 'Sam selfie',
+  name: 'Sam',
+  role: 'Webmaster',
+  description: samDescription,
+}
+
+const jayDescription: string = "Hi, I’m Jay, and I’m in my final year of a languages degree. I’m your Treasurer for this year, so it’s my job to take care of BandSoc’s money. I’m also your Publicity officer, so I’ll be promoting all the exciting events we have to offer!"
+const jay: ExecCard = {
+  image: '/images/Jay good.png',
+  imageAlt: 'Jay selfie',
+  name: 'Jay',
+  role: 'Treasurer and Publicity',
+  description: emreDescription,
+}
+
+const joeDescription: string = " Hi, I’m Joe! I’m a third year PPL student and am BandSoc’s welfare officer. It’s my job to make sure BandSoc continues to be a welcoming and safe environment for all members so if you have any issues don’t hesitate to get in touch!"
+const joe: ExecCard = {
+  image: '/images/Joe good.png',
+  imageAlt: 'Joe selfie',
+  name: 'Joe',
+  role: 'Welfare',
+  description: joeDescription,
+}
+
+const aleezaDescription: string = "Hi x I’m Aleeza, a second-year Management Student. I am your Secretary and Women’s Officer this year. It’s my job to make sure BandSoc is as inclusive as possible, and the exec meetings are organised, along with handling the weekly email x"
+const aleeza: ExecCard = {
+  image: '/images/Aleeza good.png',
+  imageAlt: 'Aleeza selfie',
+  name: 'Aleeza',
+  role: 'Secretary and Womens\'',
+  description: aleezaDescription,
+}
+
+const maxDescription: string = "Ayup, I’m Max, a second year Engineering student, lead guitarist for Nos Da and your Marketing exec! It’s my job to make sure that you lot are informed of our upcoming gigs and socials."
+const max: ExecCard = {
+  image: '/images/Me good.png',
+  imageAlt: 'Max selfie',
+  name: 'Max',
+  role: 'Marketing',
+  description: maxDescription,
+}
+
+const jacobDescription: string = "Hey, I’m Jacob and I’m a third year economics student, and the guitarist in Type One. I’m the Social Sec for BandSoc - I’ll be putting on our social events across the year!"
+const jacob: ExecCard = {
+  image: '/images/Jacob good.png',
+  imageAlt: 'Jacob selfie',
+  name: 'Jacob',
+  role: 'Social',
+  description: jacobDescription,
 }
 
 const Home: NextPage = () => {
@@ -238,38 +265,7 @@ const Home: NextPage = () => {
           >
             <SwiperSlide>
               <Box mt='5' mb='5' width='20em' p='5' >
-                <ExecCard image={taylor.image} imageAlt={taylor.imageAlt} name={taylor.name} role={taylor.role} description={taylor.description} />
-              </Box>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Box mt='5' mb='5' width='20em' p='5'  >
-                <ExecCard image={luke.image} imageAlt={luke.imageAlt} name={luke.name} role={luke.role} description={luke.description} />
-              </Box>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Box mt='5' mb='5' width='20em' p='5'  >
-                <ExecCard image={robbie.image} imageAlt={robbie.imageAlt} name={robbie.name} role={robbie.role} description={robbie.description} />
-              </Box>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Box mt='5' mb='5' width='20em' p='5'  >
-                {/* CHECK NUMBER OF CHARACTERS IN INPUT STRINGS TO EXEC CARD AND MAKE FONT SMALLER TO MAKE IT FIT IF NECESSARY */}
-                <ExecCard image={noah.image} imageAlt={noah.imageAlt} name={noah.name} role={noah.role} description={noah.description} />
-              </Box>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Box mt='5' mb='5' width='20em' p='5'  >
-                <ExecCard image={ethan.image} imageAlt={ethan.imageAlt} name={ethan.name} role={ethan.role} description={ethan.description} />
-              </Box>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Box mt='5' mb='5' width='20em' p='5'  >
                 <ExecCard image={oli.image} imageAlt={oli.imageAlt} name={oli.name} role={oli.role} description={oli.description} />
-              </Box>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Box mt='5' mb='5' width='20em' p='5' >
-                <ExecCard image={jasper.image} imageAlt={jasper.imageAlt} name={jasper.name} role={jasper.role} description={jasper.description} />
               </Box>
             </SwiperSlide>
             <SwiperSlide>
@@ -278,8 +274,54 @@ const Home: NextPage = () => {
               </Box>
             </SwiperSlide>
             <SwiperSlide>
+              <Box mt='5' mb='5' width='20em' p='5'  >
+                <ExecCard image={rhys.image} imageAlt={rhys.imageAlt} name={rhys.name} role={rhys.role} description={rhys.description} />
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box mt='5' mb='5' width='20em' p='5'  >
+                {/* CHECK NUMBER OF CHARACTERS IN INPUT STRINGS TO EXEC CARD AND MAKE FONT SMALLER TO MAKE IT FIT IF NECESSARY */}
+                <ExecCard image={kiran.image} imageAlt={kiran.imageAlt} name={kiran.name} role={kiran.role} description={kiran.description} />
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box mt='5' mb='5' width='20em' p='5'  >
+                <ExecCard image={theo.image} imageAlt={theo.imageAlt} name={theo.name} role={theo.role} description={theo.description} />
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box mt='5' mb='5' width='20em' p='5'  >
+                <ExecCard image={jay.image} imageAlt={jay.imageAlt} name={jay.name} role={jay.role} description={jay.description} />
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
               <Box mt='5' mb='5' width='20em' p='5' >
-                <ExecCard image={noahMedd.image} imageAlt={noahMedd.imageAlt} name={noahMedd.name} role={noahMedd.role} description={noahMedd.description} />
+                <ExecCard image={max.image} imageAlt={max.imageAlt} name={max.name} role={max.role} description={max.description} />
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box mt='5' mb='5' width='20em' p='5'  >
+                <ExecCard image={sam.image} imageAlt={sam.imageAlt} name={sam.name} role={sam.role} description={sam.description} />
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box mt='5' mb='5' width='20em' p='5' >
+                <ExecCard image={jacob.image} imageAlt={jacob.imageAlt} name={jacob.name} role={jacob.role} description={jacob.description} />
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box mt='5' mb='5' width='20em' p='5' >
+                <ExecCard image={aleeza.image} imageAlt={aleeza.imageAlt} name={aleeza.name} role={aleeza.role} description={aleeza.description} />
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box mt='5' mb='5' width='20em' p='5' >
+                <ExecCard image={joe.image} imageAlt={joe.imageAlt} name={joe.name} role={joe.role} description={joe.description} />
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box mt='5' mb='5' width='20em' p='5' >
+                <ExecCard image={cosmos.image} imageAlt={cosmos.imageAlt} name={cosmos.name} role={cosmos.role} description={cosmos.description} />
               </Box>
             </SwiperSlide>
 
@@ -303,12 +345,12 @@ const Home: NextPage = () => {
             <TabPanels>
               <TabPanel>
                 <Box style={{ display: 'flex', justifyContent: 'center' }} >
-                  <InstagramEmbed url="https://www.instagram.com/p/CimTFcMAgn3/" width={500} height={550} />
+                  <InstagramEmbed url="https://www.instagram.com/p/Cx2xmiessUX/" width={500} height={550} />
                 </Box>
               </TabPanel>
               <TabPanel>
                 <Box style={{ display: 'flex', justifyContent: 'center' }} >
-                  <InstagramEmbed url="https://www.instagram.com/p/CiziW9GAvpG/" width={500} height={550} />
+                  <InstagramEmbed url="https://www.instagram.com/p/CygJLV5so_h/" width={500} height={550} />
                 </Box>
               </TabPanel>
             </TabPanels>
