@@ -95,7 +95,7 @@ const jay: ExecCard = {
   imageAlt: 'Jay selfie',
   name: 'Jay',
   role: 'Treasurer and Publicity',
-  description: emreDescription,
+  description: jayDescription,
 }
 
 const joeDescription: string = " Hi, I’m Joe! I’m a third year PPL student and am BandSoc’s welfare officer. It’s my job to make sure BandSoc continues to be a welcoming and safe environment for all members so if you have any issues don’t hesitate to get in touch!"
