@@ -1,18 +1,18 @@
 import { Box } from '@chakra-ui/react';
-import React from 'react'
+import React from 'react';
 
 interface IProps {
-    imageOneSrc: string,
-    imageTwoSrc: string,
-    imageThreeSrc: string,
+  imageOneSrc: string;
+  imageTwoSrc: string;
+  imageThreeSrc: string;
 }
 
-const CustomCarousel = ({ imageOneSrc, imageTwoSrc, imageThreeSrc }: IProps) => {
-    return (
-        <>
-        
-        </>
-    )
-}
+const CustomCarousel = ({
+  imageOneSrc,
+  imageTwoSrc,
+  imageThreeSrc,
+}: IProps) => {
+  return <></>;
+};
 
-export default CustomCarousel
+export default CustomCarousel;
