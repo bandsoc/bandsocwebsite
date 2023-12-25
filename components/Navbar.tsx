@@ -1,17 +1,13 @@
 import React, { useState } from 'react';
 import NextLink from 'next/link';
 import {
-  HStack,
   Box,
   Spacer,
   Flex,
   Text,
   Link,
   Image,
-  Button,
-  useColorMode,
   IconButton,
-  Icon,
 } from '@chakra-ui/react';
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Image, Badge, Center, Text } from '@chakra-ui/react';
+import { Box, Image, Center, Text } from '@chakra-ui/react';
 
 interface IProps {
   itemId?: number;

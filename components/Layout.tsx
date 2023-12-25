@@ -1,13 +1,12 @@
 import React from 'react';
-import { Button, Flex, Spacer, useColorMode, Divider } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import Navbar from './Navbar';
 
-const Layout = ({ children }: any) => {
+const Layout = () => {
   return (
     <>
       <Flex direction="column">
         <Navbar />
-        {children}
       </Flex>
     </>
   );
