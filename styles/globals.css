@@ -2,14 +2,22 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  
-
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
 }
 /* use this to center the content on bigger screens ISSUE: SCROLLBAR
 MOVES AS WELL!!!*/
-  /* max-width: 1500px;
+/* max-width: 1500px;
   width: 100vw;
   margin: auto; */
 a {
@@ -48,7 +56,6 @@ a {
   align-items: center;
 }
 
-
 section {
   height: 100vh;
   scroll-snap-align: start;
@@ -59,4 +66,3 @@ section {
   overflow-y: auto;
   height: 100vh;
 }
-

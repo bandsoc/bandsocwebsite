@@ -1,5 +1,7 @@
 You can check the deployed website <a href="https://bandsocwebsite.vercel.app/" target="_blank">here</a>
+
 # Development Info
+
 ## Getting Started
 
 First, run the development server:

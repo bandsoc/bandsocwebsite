@@ -1,16 +1,14 @@
-import React from 'react'
-import { Button, Flex, Spacer, useColorMode, Divider } from '@chakra-ui/react'
-import Navbar from './Navbar'
+import React from 'react';
+import { Flex } from '@chakra-ui/react';
+import Navbar from './Navbar';
 
-const Layout = ({ children }: any) => {
-    return (
-        <>
-            <Flex direction='column'  >
-                <Navbar />
-                {children}
-            </Flex>
-            
-        </>
-    )
-}
-export default Layout
+const Layout = () => {
+  return (
+    <>
+      <Flex direction="column">
+        <Navbar />
+      </Flex>
+    </>
+  );
+};
+export default Layout;
