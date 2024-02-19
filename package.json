@@ -20,6 +20,7 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
     "react-social-media-embed": "^2.2.2",
+    "sharp": "^0.33.2",
     "swiper": "^8.3.2"
   },
   "devDependencies": {
