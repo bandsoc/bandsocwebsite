@@ -42,18 +42,10 @@ const Navbar = () => {
         </NextLink>
 
         <Text fontSize="2xl" color="#d3d3d3">
-          Battle of the Bands
+          Blog
         </Text>
 
         <Spacer />
-
-        <Text fontSize="2xl" color="#d3d3d3">
-          Log in
-        </Text>
-
-        <Text fontSize="2xl" mr="3rem" color="#d3d3d3">
-          Sign Up
-        </Text>
       </Flex>
       <IconButton
         aria-label="open menu"
