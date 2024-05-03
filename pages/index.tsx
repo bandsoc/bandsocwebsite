@@ -41,124 +41,124 @@ interface ExecCard {
   description: string;
 }
 
-const theoDescription: string =
-  'Hi, I’m Theo, a second year computer science student and bassist of Type One. It’s my job along with the other techs to set up and maintain all the gear in the practise room and at our gigs.';
-const theo: ExecCard = {
-  image: '/images/Theo good.jpg',
-  imageAlt: 'theo selfie',
-  name: 'Theo',
-  role: 'Deputy Tech',
-  description: theoDescription,
+const jakeDescription: string =
+  'Yo, I’m Jake, and I’m going to be the social sec (legend) this year for band soc. I’ll be organising and running the socials and be a friendly face around the other events.';
+const jake: ExecCard = {
+  image: '/images/jake.jpg',
+  imageAlt: 'jake selfie',
+  name: 'Jake',
+  role: 'Social Secretary',
+  description: jakeDescription,
 };
 
 const rhysDescription: string =
-  'Hi I’m Rhys, a second year media student and your head tech for this year. My job is to maintain equipment and lead all of the load-ins for any gig we have. I play drums in Type One and Average Speed Check.';
+  'Hey there my names Rhys and I’m your vice president and Tech for this year, I study media and am obsessed with everything midwest emo and math rock.';
 const rhys: ExecCard = {
-  image: '/images/Rhys good.jpg',
+  image: '/images/rhys.jpg',
   imageAlt: 'rhys selfie',
   name: 'Rhys',
-  role: 'Head Tech',
+  role: 'Vice President & Tech',
   description: rhysDescription,
 };
 
-const emreDescription: string =
-  'Hey all, I’m a third year discrete maths student and your vice president, and I will be assisting the President in running the society and organising events for you to enjoy!';
-const emre: ExecCard = {
-  image: '/images/dr emre good 1.jpg',
-  imageAlt: 'emre selfie',
-  name: 'Emre',
-  role: 'Vice President',
-  description: emreDescription,
+const onurDescription: string =
+  'Hi, I’m Onur, and I’m your Tour Sec this year! I’ll be organising BandSoc’s annual UK tour during the first week of the Easter Holiday :)';
+const onur: ExecCard = {
+  image: '/images/onur.png',
+  imageAlt: 'onur selfie',
+  name: 'Onur',
+  role: 'Tour Secretary',
+  description: onurDescription,
 };
 
-const cosmosDescription: string =
-  "Hi, I’m Cosmos Zero and I’m a third year physics student. I’m your Photographer for this year. I'll always find the time to help out with any creative projects! ";
-const cosmos: ExecCard = {
-  image: '/images/Cosmos good.png',
-  imageAlt: 'cosmos selfie',
-  name: 'Cosmos',
-  role: 'Photographer',
-  description: cosmosDescription,
-};
-
-const kiranDescription: string =
-  'Hey guys :) I am a vaginal year linguistics student and I am your deputy tech; I will be working with the other tech exec to help set up for gigs and events.';
-const kiran: ExecCard = {
-  image: '/images/Kiran good.jpg',
-  imageAlt: 'kiran selfie',
-  name: 'Kiran',
-  role: 'Deputy Tech',
-  description: kiranDescription,
-};
-
-const oliDescription: string =
-  'Hey! I’m Oli (third year Maths) and I’m your BandSoc President. It’s my job to run the society day to day. I’ll be delegating tasks amongst the exec, running the weekly exec meetings, and generally keeping the BandSoc ship sailing. I can’t wait to keep building the awesome live music community we have at Warwick - this year will be mega!!!';
-const oli: ExecCard = {
-  image: '/images/OLI.png',
-  imageAlt: 'Oli selfie',
-  name: 'Oli Brown',
-  role: 'President',
-  description: oliDescription,
-};
-
-const samDescription: string =
-  "Hey, I’m Sam, a third year computer scientist. I'm a big fan of all things indie and alternative and I’ll be your Webmaster for next year - I’ll be sure to get those booking sheets out on time!";
-const sam: ExecCard = {
-  image: '/images/Sam good.JPG',
-  imageAlt: 'Sam selfie',
-  name: 'Sam',
+const emiliaDescription: string =
+  "Hi, I'm your new Webmaster and I'm excited to be helping out with tasks like maintaining the BandSoc website and Discord server! :)";
+const emilia: ExecCard = {
+  image: '/images/emilia.jpg',
+  imageAlt: 'emilia selfie',
+  name: 'Emilia',
   role: 'Webmaster',
-  description: samDescription,
+  description: emiliaDescription,
 };
 
 const jayDescription: string =
-  'Hi, I’m Jay, and I’m in my final year of a languages degree. I’m your Treasurer for this year, so it’s my job to take care of BandSoc’s money. I’m also your Publicity officer, so I’ll be promoting all the exciting events we have to offer!';
+  'I’m Jay, your President for this year! I am so excited to take charge of running all our favourite events, plus some new ones, and I look forward to seeing you all play.';
 const jay: ExecCard = {
-  image: '/images/Jay good.png',
-  imageAlt: 'Jay selfie',
+  image: '/images/jay.jpg',
+  imageAlt: 'jay selfie',
   name: 'Jay',
-  role: 'Treasurer and Publicity',
+  role: 'President',
   description: jayDescription,
 };
 
-const joeDescription: string =
-  ' Hi, I’m Joe! I’m a third year PPL student and am BandSoc’s welfare officer. It’s my job to make sure BandSoc continues to be a welcoming and safe environment for all members so if you have any issues don’t hesitate to get in touch!';
-const joe: ExecCard = {
-  image: '/images/Joe good.jpg',
-  imageAlt: 'Joe selfie',
-  name: 'Joe',
-  role: 'Welfare',
-  description: joeDescription,
+const tobyDescription: string =
+  'Hi, I’m Toby, your new Secretary! If I’m not performing on stage, you can usually find me at the barrier at all the BandSoc gigs';
+const toby: ExecCard = {
+  image: '/images/toby.jpg',
+  imageAlt: 'toby selfie',
+  name: 'Toby',
+  role: 'Secretary',
+  description: tobyDescription,
 };
 
-const aleezaDescription: string =
-  'Hi x I’m Aleeza, a second-year Management Student. I am your Secretary and Women’s Officer this year. It’s my job to make sure BandSoc is as inclusive as possible, and the exec meetings are organised, along with handling the weekly email x';
-const aleeza: ExecCard = {
-  image: '/images/Aleeza good.jpg',
-  imageAlt: 'Aleeza selfie',
-  name: 'Aleeza',
-  role: "Secretary and Womens'",
-  description: aleezaDescription,
+const emmaDescription: string =
+  'Hi, I’m one of the new techs! I love music gear and I am excited to become more involved with BandSoc.';
+const emma: ExecCard = {
+  image: '/images/emma.jpg',
+  imageAlt: 'emma selfie',
+  name: 'Emma',
+  role: 'Tech',
+  description: emmaDescription,
 };
 
-const maxDescription: string =
-  'Ayup, I’m Max, a second year Engineering student, lead guitarist for Nos Da and your Marketing exec! It’s my job to make sure that you lot are informed of our upcoming gigs and socials.';
-const max: ExecCard = {
-  image: '/images/Me good.jpg',
-  imageAlt: 'Max selfie',
-  name: 'Max',
-  role: 'Marketing',
-  description: maxDescription,
+const noahDescription: string =
+  'Looking forward to taking lots of society and gig photos both on film and digitally :)';
+const noah: ExecCard = {
+  image: '/images/noah.jpg',
+  imageAlt: 'noah selfie',
+  name: 'Noah',
+  role: 'Photographer',
+  description: noahDescription,
 };
 
-const jacobDescription: string =
-  'Hey, I’m Jacob and I’m a third year economics student, and the guitarist in Type One. I’m the Social Sec for BandSoc - I’ll be putting on our social events across the year!';
-const jacob: ExecCard = {
-  image: '/images/Jacob good.jpg',
-  imageAlt: 'Jacob selfie',
-  name: 'Jacob',
-  role: 'Social',
-  description: jacobDescription,
+const lizaDescription: string =
+  'Hey I’m Liza and I’m in charge of creating propaganda over the coming year. When I’m not making silly posts for you lot I’ll also be helping out with gigs and socials.';
+const liza: ExecCard = {
+  image: '/images/liza.jpg',
+  imageAlt: 'liza selfie',
+  name: 'Liza',
+  role: "Marketing Officer",
+  description: lizaDescription,
+};
+
+const aliceDescription: string =
+  'As treasurer and women’s/non-binary officer, I’ll be making sure bandsoc avoids bankruptcy and stays an inclusive and welcoming society for all!';
+const alice: ExecCard = {
+  image: '/images/alice.jpg',
+  imageAlt: 'alice selfie',
+  name: 'Alice',
+  role: 'Treasurer and Women’s Offficer',
+  description: aliceDescription,
+};
+
+const thomDescription: string =
+  'Hi, I’m Thom the new Welfare officer for Bandsoc, here to help with welfare concerns or thoughts throughout the year.';
+const thom: ExecCard = {
+  image: '/images/thom.png',
+  imageAlt: 'thom selfie',
+  name: 'Thom',
+  role: 'Welfare Officer',
+  description: thomDescription,
+};
+
+const mattDescription: string =
+  'Hey all, I’m Matt and I’m one of the three techs for bandsoc. My job is to look after the gear and get things running for live shows.';
+const matt: ExecCard = {
+  image: '/images/matt.jpg',
+  imageAlt: 'matt selfie',
+  name: 'Matt',
+  role: 'Tech',
+  description: mattDescription,
 };
 
 const Home: NextPage = () => {
@@ -370,22 +370,11 @@ const Home: NextPage = () => {
             <SwiperSlide>
               <Box mt="5" mb="5" width="20em" p="5">
                 <ExecCard
-                  image={oli.image}
-                  imageAlt={oli.imageAlt}
-                  name={oli.name}
-                  role={oli.role}
-                  description={oli.description}
-                />
-              </Box>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Box mt="5" mb="5" width="20em" p="5">
-                <ExecCard
-                  image={emre.image}
-                  imageAlt={emre.imageAlt}
-                  name={emre.name}
-                  role={emre.role}
-                  description={emre.description}
+                  image={jay.image}
+                  imageAlt={jay.imageAlt}
+                  name={jay.name}
+                  role={jay.role}
+                  description={jay.description}
                 />
               </Box>
             </SwiperSlide>
@@ -402,101 +391,112 @@ const Home: NextPage = () => {
             </SwiperSlide>
             <SwiperSlide>
               <Box mt="5" mb="5" width="20em" p="5">
+                <ExecCard
+                  image={matt.image}
+                  imageAlt={matt.imageAlt}
+                  name={matt.name}
+                  role={matt.role}
+                  description={matt.description}
+                />
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Box mt="5" mb="5" width="20em" p="5">
                 {/* CHECK NUMBER OF CHARACTERS IN INPUT STRINGS TO EXEC CARD AND MAKE FONT SMALLER TO MAKE IT FIT IF NECESSARY */}
                 <ExecCard
-                  image={kiran.image}
-                  imageAlt={kiran.imageAlt}
-                  name={kiran.name}
-                  role={kiran.role}
-                  description={kiran.description}
+                  image={emma.image}
+                  imageAlt={emma.imageAlt}
+                  name={emma.name}
+                  role={emma.role}
+                  description={emma.description}
                 />
               </Box>
             </SwiperSlide>
             <SwiperSlide>
               <Box mt="5" mb="5" width="20em" p="5">
                 <ExecCard
-                  image={theo.image}
-                  imageAlt={theo.imageAlt}
-                  name={theo.name}
-                  role={theo.role}
-                  description={theo.description}
+                  image={jake.image}
+                  imageAlt={jake.imageAlt}
+                  name={jake.name}
+                  role={jake.role}
+                  description={jake.description}
                 />
               </Box>
             </SwiperSlide>
             <SwiperSlide>
               <Box mt="5" mb="5" width="20em" p="5">
                 <ExecCard
-                  image={jay.image}
-                  imageAlt={jay.imageAlt}
-                  name={jay.name}
-                  role={jay.role}
-                  description={jay.description}
+                  image={thom.image}
+                  imageAlt={thom.imageAlt}
+                  name={thom.name}
+                  role={thom.role}
+                  description={thom.description}
                 />
               </Box>
             </SwiperSlide>
             <SwiperSlide>
               <Box mt="5" mb="5" width="20em" p="5">
                 <ExecCard
-                  image={max.image}
-                  imageAlt={max.imageAlt}
-                  name={max.name}
-                  role={max.role}
-                  description={max.description}
+                  image={liza.image}
+                  imageAlt={liza.imageAlt}
+                  name={liza.name}
+                  role={liza.role}
+                  description={liza.description}
                 />
               </Box>
             </SwiperSlide>
             <SwiperSlide>
               <Box mt="5" mb="5" width="20em" p="5">
                 <ExecCard
-                  image={sam.image}
-                  imageAlt={sam.imageAlt}
-                  name={sam.name}
-                  role={sam.role}
-                  description={sam.description}
+                  image={alice.image}
+                  imageAlt={alice.imageAlt}
+                  name={alice.name}
+                  role={alice.role}
+                  description={alice.description}
                 />
               </Box>
             </SwiperSlide>
             <SwiperSlide>
               <Box mt="5" mb="5" width="20em" p="5">
                 <ExecCard
-                  image={jacob.image}
-                  imageAlt={jacob.imageAlt}
-                  name={jacob.name}
-                  role={jacob.role}
-                  description={jacob.description}
+                  image={noah.image}
+                  imageAlt={noah.imageAlt}
+                  name={noah.name}
+                  role={noah.role}
+                  description={noah.description}
                 />
               </Box>
             </SwiperSlide>
             <SwiperSlide>
               <Box mt="5" mb="5" width="20em" p="5">
                 <ExecCard
-                  image={aleeza.image}
-                  imageAlt={aleeza.imageAlt}
-                  name={aleeza.name}
-                  role={aleeza.role}
-                  description={aleeza.description}
+                  image={toby.image}
+                  imageAlt={toby.imageAlt}
+                  name={toby.name}
+                  role={toby.role}
+                  description={toby.description}
                 />
               </Box>
             </SwiperSlide>
             <SwiperSlide>
               <Box mt="5" mb="5" width="20em" p="5">
                 <ExecCard
-                  image={joe.image}
-                  imageAlt={joe.imageAlt}
-                  name={joe.name}
-                  role={joe.role}
-                  description={joe.description}
+                  image={emilia.image}
+                  imageAlt={emilia.imageAlt}
+                  name={emilia.name}
+                  role={emilia.role}
+                  description={emilia.description}
                 />
               </Box>
             </SwiperSlide>
             <SwiperSlide>
               <Box mt="5" mb="5" width="20em" p="5">
                 <ExecCard
-                  image={cosmos.image}
-                  imageAlt={cosmos.imageAlt}
-                  name={cosmos.name}
-                  role={cosmos.role}
-                  description={cosmos.description}
+                  image={onur.image}
+                  imageAlt={onur.imageAlt}
+                  name={onur.name}
+                  role={onur.role}
+                  description={onur.description}
                 />
               </Box>
             </SwiperSlide>
