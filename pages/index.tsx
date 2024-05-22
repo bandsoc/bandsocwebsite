@@ -537,7 +537,7 @@ const Home: NextPage = () => {
               <TabPanel>
                 <Box style={{ display: 'flex', justifyContent: 'center' }}>
                   <InstagramEmbed
-                    url="https://www.instagram.com/warwickbandsoc/p/C50ld9bNkXX/"
+                    url="https://www.instagram.com/p/C50ld9bNkXX/?utm_source=ig_web_copy_link"
                     width={500}
                     height={550}
                   />
