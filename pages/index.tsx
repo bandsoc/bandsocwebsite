@@ -528,7 +528,7 @@ const Home: NextPage = () => {
               <TabPanel>
                 <Box style={{ display: 'flex', justifyContent: 'center' }}>
                   <InstagramEmbed
-                    url="https://www.instagram.com/p/CygJLV5so_h/"
+                    url="https://www.instagram.com/p/C69NzLYNO6Y/"
                     width={500}
                     height={550}
                   />
@@ -537,7 +537,7 @@ const Home: NextPage = () => {
               <TabPanel>
                 <Box style={{ display: 'flex', justifyContent: 'center' }}>
                   <InstagramEmbed
-                    url="https://www.instagram.com/p/Cx2xmiessUX/"
+                    url="https://www.instagram.com/warwickbandsoc/p/C50ld9bNkXX/?img_index=2"
                     width={500}
                     height={550}
                   />
