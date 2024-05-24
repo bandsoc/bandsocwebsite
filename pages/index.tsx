@@ -528,7 +528,7 @@ const Home: NextPage = () => {
               <TabPanel>
                 <Box style={{ display: 'flex', justifyContent: 'center' }}>
                   <InstagramEmbed
-                    url="https://www.instagram.com/p/C69NzLYNO6Y/"
+                    url="https://www.instagram.com/p/C7W1S7ptpco/?utm_source=ig_web_copy_link"
                     width={500}
                     height={550}
                   />
